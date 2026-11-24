@@ -1,0 +1,2825 @@
+* NGSPICE file created from pex_flat.ext - technology: sky130A
+
+.subckt pex_flat clk ena rst_n ua[0] ua[1] ua[2] ua[3] ua[4] ua[5] ua[6] ua[7] ui_in[0]
++ ui_in[1] ui_in[2] ui_in[3] ui_in[4] ui_in[5] ui_in[6] ui_in[7] uio_in[0] uio_in[1]
++ uio_in[2] uio_in[3] uio_in[4] uio_in[5] uio_in[6] uio_in[7] uio_oe[0] uio_oe[1]
++ uio_oe[2] uio_oe[3] uio_oe[4] uio_oe[5] uio_oe[6] uio_oe[7] uio_out[0] uio_out[1]
++ uio_out[2] uio_out[3] uio_out[4] uio_out[5] uio_out[6] uio_out[7] uo_out[0] uo_out[1]
++ uo_out[2] uo_out[3] uo_out[4] uo_out[5] uo_out[6] uo_out[7] VDPWR VGND VDPWR_uq0
+X0 x_idac_c.net4 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X1 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=518.03998 ps=3.73936k w=8 l=4
+X2 x_idac_c.net4 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X3 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X4 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X5 ua[1] x_core.net5 x_core.net6 ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X6 VGND x_idac_b.net5 x_idac_b.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X7 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X8 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X9 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X10 x_core.net4 ua[5] x_core.lin_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X11 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X12 x_core.net4 ua[5] x_core.lin_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X13 x_idac_c.net5 uio_in[3] x_idac_c.net1 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X14 x_ota_iv.net6 x_pas.x1_i_v_out x_ota_iv.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X15 x_ota_iv.net1 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X16 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X17 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X18 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X19 x_ota_iv.net1 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X20 x_idac_c.net4 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X21 VGND x_ota_iv.net8 x_ota_iv.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X22 VDPWR x_ota_vi.net5 x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X23 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X24 x_ota_vi.net4 x_pas.vi_net2 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X25 VGND x_ota_iv.net8 x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X26 VGND x_ota_vi.net8 x_ota_vi.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X27 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X28 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X29 VDPWR x_ota_vi.net9 x_ota_vi.net9 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X30 x_aux.b3 x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X31 a_47669_2185# x_ota_vi.VBN_CASC VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.145 ps=1.58 w=0.5 l=0.5
+X32 x_pas.vi_vmir x_pas.vi_net1 x_pas.vi_net2 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=0.5
+X33 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X34 x_core.net3 x_core.iy_lin x_core.iy_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X35 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X36 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X37 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X38 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X39 x_aux.b4 x_aux.b2 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X40 x_ota_iv.net6 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X41 VGND VDPWR a_59394_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X42 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X43 x_pas.vi_net1 x_ota_vi.VBN_CASC x_ota_vi.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X44 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X45 ua[0] x_idac_b.net6 x_idac_b.out ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=14
+X46 x_ota_iv.net3 x_pas.x1_i_v_out x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X47 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X48 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X49 x_ota_iv.net4 x_ota_iv.VBP_CASC x_pas.iv_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X50 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X51 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X52 VDPWR x_ota_iv.net5 x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X53 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X54 a_48095_12785# x_ota_iv.VBN_CASC a_47953_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X55 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X56 x_ota_vi.net6 x_pas.vi_net2 x_ota_vi.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.725 ps=5.58 w=2.5 l=2
+X57 x_ota_vi.net3 x_ota_vi.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X58 ua[1] x_core.net5 x_core.net6 ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X59 x_ota_iv.net5 x_ota_iv.VBP_CASC x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X60 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X61 x_core.net6 x_core.net5 ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X62 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X63 x_ota_vi.net4 x_ota_vi.VBP_CASC x_pas.vi_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X64 a_53446_6783# a_53068_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X65 x_ota_iv.net8 x_ota_iv.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X66 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X67 a_54580_6913# VDPWR VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X68 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X69 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X70 x_idac_c.net5 uio_in[0] x_idac_c.net2 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X71 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X72 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X73 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X74 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X75 x_ota_vi.net6 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X76 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X77 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X78 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X79 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X80 x_idac_b.Vbranch x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X81 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X82 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X83 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X84 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X85 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X86 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X87 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=2.32 ps=16.58 w=8 l=4
+X88 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X89 VGND x_ota_iv.net8 x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X90 x_ota_vi.net7 x_ota_vi.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X91 x_ota_vi.net14 x_ota_vi.VSTRP_IP VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X92 ua[0] x_idac_a.net6 x_idac_a.net6 ua[0] sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=14
+X93 a_47811_2185# x_ota_vi.VBN_CASC a_47669_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X94 VGND x_ota_iv.net8 x_ota_iv.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X95 ua[0] x_idac_b.net6 x_idac_b.net6 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=14
+X96 x_core.net6 x_core.net5 ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X97 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X98 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X99 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X100 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X101 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X102 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X103 x_idac_a.net4 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X104 VDPWR VDPWR x_ota_vi.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X105 x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X106 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X107 x_idac_b.net4 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X108 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X109 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X110 x_ota_iv.net3 x_ota_iv.VBP_CASC x_ota_iv.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X111 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X112 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X113 VDPWR x_ota_vi.VBP_TOP x_ota_vi.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X114 x_idac_a.net5 ui_in[3] x_idac_a.net1 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X115 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X116 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X117 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X118 x_idac_a.net4 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X119 x_ota_iv.net6 x_pas.x1_i_v_out x_ota_iv.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.725 ps=5.58 w=2.5 l=2
+X120 x_idac_c.net5 uio_in[1] x_idac_c.net3 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X121 x_idac_b.net5 ui_in[7] x_idac_b.net1 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X122 x_core.net6 x_core.net5 ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X123 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X124 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X125 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X126 x_idac_b.net4 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X127 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X128 ua[1] x_core.net5 x_core.net6 ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X129 a_58932_17761# VDPWR a_59086_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X130 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X131 x_ota_iv.net4 x_ota_iv.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X132 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X133 a_56092_17513# a_55714_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X134 a_52690_17383# a_53068_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X135 VDPWR x_ota_vi.VBP_TOP x_ota_vi.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X136 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X137 x_ota_vi.net6 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X138 VGND x_ota_vi.EN_B x_ota_vi.net8 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=1
+X139 x_core.net3 ua[5] x_idac_a.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X140 ua[0] x_idac_a.net6 x_idac_a.out ua[0] sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=14
+X141 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X142 a_47953_2185# x_ota_vi.VBN_CASC a_47811_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X143 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X144 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X145 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X146 x_ota_iv.net6 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X147 x_ota_vi.net3 ua[3] x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X148 a_55336_17513# a_54958_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X149 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X150 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X151 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X152 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X153 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X154 x_core.net4 x_core.iy_lin x_core.iz_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X155 x_ota_iv.net15 a_57226_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X156 x_idac_a.net5 ui_in[2] x_idac_a.net4 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X157 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X158 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X159 a_58624_17761# VDPWR a_58778_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X160 x_core.net3 x_core.iy_lin x_core.iy_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X161 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X162 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X163 x_ota_vi.EN_B VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X164 x_idac_b.net5 ui_in[6] x_idac_b.net4 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X165 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X166 VGND x_ota_vi.net8 x_ota_vi.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X167 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X168 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X169 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X170 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X171 x_ota_vi.net9 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X172 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X173 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X174 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X175 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X176 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X177 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X178 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X179 x_aux.b1 x_ota_vi.MN_TAIL_BIAS VGND VGND sky130_fd_pr__nfet_01v8 ad=3.19 pd=22.58 as=1.595 ps=11.29 w=11 l=4
+X180 x_core.net1 x_core.ix_sq ua[4] VGND sky130_fd_pr__nfet_01v8 ad=0.348 pd=2.98 as=0.348 ps=2.98 w=1.2 l=4
+X181 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X182 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X183 VGND a_53824_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X184 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X185 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X186 a_48095_2185# x_ota_vi.VBN_CASC a_47953_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X187 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X188 x_ota_iv.VBP_CASC x_ota_iv.VBP_CASC a_48601_19449# VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0525 ps=0.71 w=0.5 l=0.5
+X189 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X190 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X191 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X192 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X193 VDPWR x_ota_iv.net9 x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X194 x_pas.vi_net1 x_ota_vi.VBN_CASC x_ota_vi.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X195 x_ota_vi.net2 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X196 x_core.lin_out ua[5] x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X197 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X198 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X199 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X200 x_ota_vi.net3 x_ota_vi.VBP_CASC x_ota_vi.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X201 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X202 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X203 x_aux.b4 x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X204 a_53446_6783# a_53824_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X205 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X206 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X207 x_ota_iv.net1 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X208 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X209 x_core.iy_lin x_core.iy_lin x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X210 x_ota_vi.net7 x_ota_vi.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X211 a_59240_17761# VDPWR a_59394_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X212 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X213 x_ota_vi.net5 x_ota_vi.VBN_CASC x_ota_vi.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X214 x_ota_iv.net9 VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X215 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X216 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X217 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X218 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X219 x_idac_a.net5 ui_in[1] x_idac_a.net3 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X220 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X221 x_ota_iv.net3 x_ota_iv.VBP_CASC x_ota_iv.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X222 VGND x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X223 x_core.lin_out ua[5] x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X224 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X225 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X226 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X227 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X228 VDPWR x_ota_vi.VBP_TOP x_ota_vi.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X229 x_pas.vi_net1 x_ota_vi.VBP_CASC x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X230 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X231 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X232 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X233 x_ota_vi.VSTRP_OUT x_ota_vi.net14 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X234 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X235 x_ota_iv.net6 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.725 ps=5.58 w=2.5 l=2
+X236 x_ota_iv.net2 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X237 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X238 VGND x_ota_iv.net8 x_ota_iv.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X239 x_aux.b1 x_ota_vi.MN_TAIL_BIAS VGND VGND sky130_fd_pr__nfet_01v8 ad=1.595 pd=11.29 as=1.595 ps=11.29 w=11 l=4
+X240 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X241 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X242 VDPWR x_ota_vi.VBP_TOP x_ota_vi.VBP_TOP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X243 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X244 VGND x_ota_iv.net8 x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X245 x_ota_vi.net3 ua[3] x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.725 pd=5.58 as=0.3625 ps=2.79 w=2.5 l=2
+X246 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X247 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X248 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X249 x_idac_a.out x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X250 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X251 x_ota_vi.EN_B VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X252 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X253 x_ota_vi.VBP_TOP VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=1
+X254 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X255 x_aux.b3 x_aux.b1 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X256 x_aux.v_mir_out x_aux.v_mir_out VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X257 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X258 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X259 x_core.net4 x_core.iy_lin x_core.iz_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X260 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X261 VDPWR VDPWR x_ota_iv.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X262 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X263 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X264 VDPWR x_ota_vi.VBP_TOP x_ota_vi.net8 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X265 x_pas.vi_net1 x_ota_vi.VBP_CASC x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X266 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X267 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X268 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X269 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X270 VDPWR x_ota_iv.net5 x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X271 VGND x_ota_iv.EN_B x_ota_iv.net8 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=1
+X272 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X273 a_52690_17383# a_52312_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X274 x_core.net2 x_core.iz_sq ua[4] VGND sky130_fd_pr__nfet_01v8 ad=0.348 pd=2.98 as=0.348 ps=2.98 w=1.2 l=4
+X275 VDPWR x_ota_vi.net9 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X276 x_ota_iv.net4 x_ota_iv.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X277 x_ota_vi.net4 x_ota_vi.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X278 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X279 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X280 ua[1] x_core.net5 x_core.net6 ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X281 x_core.net6 x_core.net5 ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X282 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X283 a_51934_17383# a_51556_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X284 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X285 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=2.32 pd=16.58 as=1.16 ps=8.29 w=8 l=4
+X286 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X287 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X288 a_56092_6913# a_55714_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X289 VDPWR x_ota_vi.net9 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X290 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X291 x_ota_vi.net6 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X292 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X293 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X294 x_ota_iv.VSTRP_OUT x_ota_iv.EN_B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X295 x_aux.b4 x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X296 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X297 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X298 x_aux.c_net1 x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X299 x_aux.b3 x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X300 a_58624_7161# VDPWR a_58470_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X301 x_ota_vi.VSTRP_IP x_ota_vi.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X302 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X303 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X304 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X305 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=2.32 pd=16.58 as=1.16 ps=8.29 w=8 l=4
+X306 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X307 x_ota_iv.net3 x_ota_iv.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X308 x_ota_iv.net7 x_ota_iv.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X309 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X310 x_ota_vi.VSTRP_OUT x_ota_vi.EN_B VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X311 VGND x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X312 x_idac_c.net6 x_idac_c.net6 ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=14
+X313 a_56848_6913# a_56470_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X314 x_pas.vi_net2 x_pas.vi_net1 x_pas.vi_vmir VGND sky130_fd_pr__nfet_01v8_lvt ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=0.5
+X315 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X316 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X317 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X318 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X319 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X320 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X321 VGND x_ota_iv.net8 x_ota_iv.net8 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X322 a_58316_7161# VDPWR a_58470_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X323 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X324 x_aux.c_net1 x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X325 a_51934_6783# a_52312_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X326 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X327 a_48237_2185# x_ota_vi.VBN_CASC a_48095_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X328 x_idac_b.out x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X329 x_ota_vi.VSTRP_OUT x_ota_vi.net14 a_59240_8093# VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X330 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X331 x_pas.vi_vmir x_pas.vi_vmir VDPWR VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=7
+X332 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X333 x_core.iy_lin x_core.iy_lin x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X334 VGND x_ota_vi.net8 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X335 x_aux.b4 x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X336 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X337 a_59240_18693# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X338 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X339 x_pas.vi_vmir x_pas.vi_net1 x_pas.vi_net2 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=0.5
+X340 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X341 x_ota_vi.net5 x_ota_vi.VBP_CASC x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X342 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X343 x_idac_b.Vbranch x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X344 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X345 x_ota_vi.net8 x_ota_vi.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X346 x_ota_iv.net3 x_ota_iv.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X347 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X348 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X349 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X350 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X351 x_ota_vi.net6 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X352 x_idac_c.out x_idac_c.net6 ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=14
+X353 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=2.32 ps=16.58 w=8 l=4
+X354 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X355 x_ota_iv.net5 x_ota_iv.VBN_CASC x_ota_iv.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X356 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X357 x_pas.vi_vmir x_pas.vi_net1 x_pas.vi_net2 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=0.5
+X358 x_ota_iv.VBN_CASC x_ota_iv.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X359 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X360 x_ota_iv.net6 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X361 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X362 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X363 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X364 a_58932_7161# VDPWR a_59086_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X365 x_ota_vi.net4 x_pas.vi_net2 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.725 pd=5.58 as=0.3625 ps=2.79 w=2.5 l=2
+X366 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X367 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X368 x_ota_vi.net4 x_ota_vi.VBP_CASC x_pas.vi_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X369 a_48379_2185# x_ota_vi.VBN_CASC a_48237_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X370 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X371 x_aux.b4 x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X372 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=2.32 ps=16.58 w=8 l=4
+X373 x_aux.c_net1 x_pas.vi_vmir VDPWR VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=7
+X374 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X375 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X376 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X377 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X378 a_47811_12785# x_ota_iv.VBN_CASC a_47669_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X379 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X380 x_core.iy_lin x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X381 VDPWR x_ota_iv.net9 x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X382 VGND x_ota_vi.net8 x_ota_vi.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X383 x_aux.b2 x_aux.b1 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X384 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X385 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X386 a_48521_12785# x_ota_iv.VBN_CASC a_48379_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X387 x_core.ix_sq x_aux.v_mir_out VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X388 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X389 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X390 x_ota_iv.net1 x_ota_iv.VBN_CASC x_ota_iv.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X391 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X392 x_aux.b3 x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X393 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X394 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X395 a_59240_8093# VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X396 x_core.net3 ua[5] x_idac_a.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X397 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X398 x_core.net4 ua[5] x_core.lin_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X399 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X400 VDPWR x_ota_iv.VBP_TOP x_ota_iv.net8 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X401 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X402 x_ota_vi.net1 x_ota_vi.VBN_CASC x_ota_vi.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X403 x_pas.vi_net1 x_ota_vi.VBP_CASC x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X404 VGND x_core.net6 x_core.net6 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=2.32 ps=16.58 w=8 l=2
+X405 x_ota_iv.net1 x_ota_iv.VBN_CASC x_ota_iv.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X406 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X407 x_idac_a.net6 x_idac_a.net6 ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=14
+X408 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X409 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X410 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X411 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X412 VDPWR x_ota_iv.net9 x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X413 x_ota_vi.net6 x_pas.vi_net2 x_ota_vi.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X414 VDPWR x_ota_iv.net9 x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X415 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X416 x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X417 x_core.iy_lin x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X418 x_ota_vi.net5 x_ota_vi.VBP_CASC x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X419 x_pas.vi_vmir x_pas.vi_vmir VDPWR VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=7
+X420 a_48459_19449# x_ota_iv.VBP_CASC VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.0525 pd=0.71 as=0.145 ps=1.58 w=0.5 l=0.5
+X421 x_pas.iv_net1 x_ota_iv.VBP_CASC x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X422 a_55336_6913# a_54958_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X423 x_core.net4 x_core.iz_lin ua[4] VGND sky130_fd_pr__nfet_01v8 ad=0.348 pd=2.98 as=0.348 ps=2.98 w=1.2 l=4
+X424 a_48521_2185# x_ota_vi.VBN_CASC a_48379_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X425 x_idac_a.net4 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X426 x_idac_c.Vbranch x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X427 a_56092_6913# a_56470_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X428 a_56848_17513# a_57226_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X429 x_ota_iv.net9 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X430 x_aux.b1 x_aux.b1 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X431 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X432 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X433 ua[0] x_idac_b.net6 x_idac_b.net6 ua[0] sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=14
+X434 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X435 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X436 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X437 VDPWR x_ota_vi.net5 x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X438 x_idac_a.net4 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X439 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X440 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X441 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X442 x_idac_a.out x_idac_a.net6 ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=14
+X443 x_idac_b.net5 ui_in[5] x_idac_b.net3 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X444 x_ota_iv.VBP_TOP VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=1
+X445 x_core.iy_lin x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X446 x_idac_b.Vbranch x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X447 x_idac_c.net6 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X448 x_ota_vi.VBN_CASC x_ota_vi.EN_B VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=2
+X449 x_core.iy_lin x_core.iy_lin x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X450 x_pas.vi_vmir x_pas.vi_vmir VDPWR VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=7
+X451 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X452 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X453 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X454 x_ota_iv.VBN_CASC x_ota_iv.EN_B VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=2
+X455 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X456 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X457 VDPWR x_ota_iv.net5 x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X458 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X459 x_pas.vi_net2 VGND VGND sky130_fd_pr__res_xhigh_po_1p41 l=34
+X460 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X461 x_idac_b.net3 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X462 x_ota_iv.net4 x_ota_iv.VBP_CASC x_pas.iv_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X463 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X464 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X465 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X466 x_ota_vi.VBN_CASC x_ota_vi.VBN_CASC a_48521_2185# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0525 ps=0.71 w=0.5 l=0.5
+X467 x_idac_a.Vbranch x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X468 x_ota_vi.net4 x_ota_vi.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X469 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X470 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X471 x_ota_vi.net4 x_ota_vi.VBP_CASC x_pas.vi_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X472 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X473 ua[0] x_idac_b.net6 x_idac_b.out ua[0] sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=14
+X474 VDPWR VDPWR x_ota_vi.VBP_CASC VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X475 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X476 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X477 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X478 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X479 VDPWR x_ota_iv.VBP_TOP x_ota_iv.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X480 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X481 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X482 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X483 VDPWR x_ota_iv.net5 x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X484 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X485 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X486 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X487 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X488 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X489 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X490 x_ota_iv.net3 x_ota_iv.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X491 x_ota_iv.net7 x_ota_iv.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X492 x_ota_iv.net5 x_ota_iv.VBP_CASC x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X493 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X494 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X495 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X496 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X497 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X498 x_aux.b4 x_aux.b4 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X499 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X500 x_aux.c_net1 x_pas.vi_vmir VDPWR VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.74 pd=12.58 as=1.74 ps=12.58 w=6 l=7
+X501 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X502 x_ota_iv.net5 x_ota_iv.VBP_CASC x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X503 x_idac_a.net5 ui_in[0] x_idac_a.net2 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X504 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X505 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X506 x_ota_vi.MN_TAIL_BIAS x_ota_iv.EN_B VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=6.4
+X507 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X508 x_ota_iv.net2 x_ota_iv.VBN_CASC x_pas.iv_net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X509 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X510 ua[2] x_pas.iv_net1 sky130_fd_pr__cap_mim_m3_1 l=22 w=22
+X511 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X512 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X513 x_idac_b.net5 ui_in[4] x_idac_b.net2 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X514 x_ota_vi.net6 x_pas.vi_net2 x_ota_vi.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X515 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X516 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X517 x_pas.x1_i_v_out x_core.net6 VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=1.16 ps=8.29 w=8 l=2
+X518 x_core.net4 ua[5] x_core.lin_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X519 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X520 x_ota_iv.net7 x_ota_iv.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X521 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X522 x_ota_iv.net7 x_ota_iv.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X523 x_ota_vi.net6 ua[3] x_ota_vi.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X524 VGND x_aux.c_net1 x_aux.c_net1 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=7
+X525 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X526 x_ota_iv.net4 x_ota_iv.VBP_CASC x_pas.iv_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X527 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X528 VGND x_ota_iv.net8 x_ota_iv.VBP_CASC VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=2
+X529 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X530 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X531 a_54580_17513# a_54958_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X532 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X533 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X534 a_58624_7161# VDPWR a_58778_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X535 VGND x_ota_vi.MN_TAIL_BIAS x_aux.b1 VGND sky130_fd_pr__nfet_01v8 ad=1.595 pd=11.29 as=1.595 ps=11.29 w=11 l=4
+X536 VDPWR x_ota_iv.net5 x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X537 x_ota_iv.VSTRP_OUT x_ota_iv.net14 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X538 x_pas.vi_vmir x_pas.vi_net1 sky130_fd_pr__cap_mim_m3_1 l=22 w=22
+X539 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X540 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X541 VGND x_aux.c_net1 x_aux.c_net1 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X542 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X543 x_core.iz_sq x_aux.v_mir_out VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X544 VGND x_aux.c_net1 x_aux.c_net1 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X545 x_ota_iv.net3 x_ota_iv.VBP_CASC x_ota_iv.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X546 VGND x_ota_vi.net8 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X547 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X548 VDPWR x_ota_vi.net5 x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X549 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X550 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X551 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X552 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X553 x_ota_vi.net2 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X554 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X555 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X556 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X557 x_idac_a.Vbranch x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X558 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X559 VGND x_aux.c_net1 x_aux.c_net1 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X560 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X561 x_ota_iv.net3 x_pas.x1_i_v_out x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X562 a_54580_17513# VDPWR VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X563 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X564 ua[0] x_idac_c.net6 x_idac_c.net6 ua[0] sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=14
+X565 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X566 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X567 a_51178_17383# a_51556_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X568 a_55336_6913# a_55714_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X569 x_aux.c_net1 x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X570 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X571 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X572 a_51178_6783# x_ota_vi.net12 VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X573 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X574 x_ota_iv.net4 x_ota_iv.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X575 a_53446_17383# a_53824_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X576 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X577 a_58316_17761# VDPWR a_58162_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X578 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X579 x_idac_a.net3 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X580 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X581 x_pas.iv_net1 x_ota_iv.VBP_CASC x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X582 x_aux.c_net1 x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X583 VDPWR x_ota_iv.net9 x_ota_iv.net9 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X584 x_ota_iv.VSTRP_OUT x_ota_iv.net14 a_59240_18693# VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X585 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X586 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X587 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X588 x_core.lin_out ua[5] x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X589 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X590 VDPWR x_ota_vi.net9 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X591 x_ota_vi.net3 x_ota_vi.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X592 x_ota_vi.net3 ua[3] x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X593 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X594 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X595 VGND x_ota_vi.MN_TAIL_BIAS x_aux.b1 VGND sky130_fd_pr__nfet_01v8 ad=1.595 pd=11.29 as=3.19 ps=22.58 w=11 l=4
+X596 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X597 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X598 x_ota_iv.VSTRP_IP x_ota_iv.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X599 a_59240_7161# VDPWR a_59086_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X600 VDPWR x_ota_iv.VBP_TOP x_ota_iv.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X601 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X602 ua[0] x_idac_c.net6 x_idac_c.out ua[0] sky130_fd_pr__pfet_01v8 ad=1.74 pd=12.58 as=0.87 ps=6.29 w=6 l=14
+X603 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X604 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X605 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VSTRP_OUT x_ota_vi.net15 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=4
+X606 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X607 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X608 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X609 x_ota_vi.VSTRP_IP x_ota_vi.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X610 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X611 x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X612 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X613 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X614 a_48237_12785# x_ota_iv.VBN_CASC a_48095_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X615 x_idac_a.net1 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X616 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X617 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X618 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X619 x_core.net3 x_core.iy_lin x_core.iy_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X620 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X621 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X622 x_ota_vi.net4 x_ota_vi.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X623 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X624 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X625 x_ota_vi.net6 ua[3] x_ota_vi.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X626 x_core.net4 x_core.iy_lin x_core.iz_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X627 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X628 x_ota_iv.VSTRP_IP x_ota_iv.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X629 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X630 x_aux.v_mir_out x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.29 pd=2.58 as=0.145 ps=1.29 w=1 l=7
+X631 VGND x_ota_vi.net8 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X632 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X633 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X634 x_ota_iv.net6 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X635 x_core.iy_lin x_core.iy_lin x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X636 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X637 x_core.net4 x_core.iy_lin x_core.iz_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X638 x_ota_vi.net5 x_ota_vi.VBP_CASC x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X639 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X640 VGND x_ota_iv.net8 x_ota_iv.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X641 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X642 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X643 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X644 x_ota_vi.net2 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X645 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X646 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X647 VDPWR x_ota_iv.VBP_TOP x_ota_iv.VBP_TOP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X648 a_58624_17761# VDPWR a_58470_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X649 x_idac_b.net4 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X650 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X651 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X652 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X653 x_ota_vi.net4 x_pas.vi_net2 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X654 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X655 x_core.net3 x_idac_a.out ua[4] VGND sky130_fd_pr__nfet_01v8 ad=0.348 pd=2.98 as=0.348 ps=2.98 w=1.2 l=4
+X656 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X657 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X658 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X659 VGND x_ota_vi.net8 x_ota_vi.net8 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X660 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X661 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X662 VGND x_idac_c.net5 x_idac_c.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X663 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X664 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X665 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X666 x_ota_iv.net4 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X667 VGND a_53824_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X668 x_idac_b.net4 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X669 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X670 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X671 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X672 VDPWR x_ota_iv.net5 x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X673 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X674 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X675 x_ota_vi.net1 x_ota_vi.VBN_CASC x_ota_vi.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X676 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X677 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X678 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X679 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X680 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X681 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X682 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X683 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X684 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X685 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X686 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X687 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X688 x_ota_vi.net3 x_ota_vi.net5 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X689 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=1.16 ps=8.29 w=8 l=4
+X690 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X691 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X692 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X693 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X694 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X695 a_51178_6783# a_51556_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X696 x_ota_vi.net4 x_ota_vi.VBP_CASC x_pas.vi_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X697 x_ota_iv.net6 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X698 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X699 x_core.ix_sq ua[5] x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X700 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X701 a_52690_6783# a_52312_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X702 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X703 VDPWR x_ota_iv.VBP_TOP x_ota_iv.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X704 x_ota_iv.net3 x_pas.x1_i_v_out x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.725 pd=5.58 as=0.3625 ps=2.79 w=2.5 l=2
+X705 a_59240_17761# VDPWR a_59086_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X706 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X707 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X708 ua[0] x_idac_c.net6 x_idac_c.out ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=14
+X709 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X710 VDPWR x_ota_vi.net9 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X711 x_idac_c.net5 uio_in[2] x_idac_c.net4 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=0.15
+X712 a_47953_12785# x_ota_iv.VBN_CASC a_47811_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X713 x_ota_vi.net4 x_pas.vi_net2 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X714 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X715 ua[2] x_pas.x1_i_v_out VGND sky130_fd_pr__res_xhigh_po_1p41 l=20
+X716 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X717 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X718 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X719 x_ota_vi.VSTRP_IP x_ota_vi.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X720 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X721 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X722 x_ota_iv.VBN_CASC x_ota_iv.VBN_CASC a_48521_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0525 ps=0.71 w=0.5 l=0.5
+X723 x_ota_vi.net5 x_ota_vi.VBP_CASC x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X724 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X725 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X726 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X727 x_idac_b.net6 x_idac_b.net6 ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=14
+X728 x_idac_b.net1 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X729 x_core.iz_lin x_aux.v_mir_out VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X730 x_pas.vi_net2 x_pas.vi_net1 x_pas.vi_vmir VGND sky130_fd_pr__nfet_01v8_lvt ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=0.5
+X731 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X732 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X733 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X734 x_ota_iv.VSTRP_IP VDPWR a_58162_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X735 VGND x_ota_vi.net8 x_ota_vi.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X736 VGND x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X737 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X738 a_58932_17761# VDPWR a_58778_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X739 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X740 a_48459_8849# x_ota_vi.VBP_CASC VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.0525 pd=0.71 as=0.145 ps=1.58 w=0.5 l=0.5
+X741 x_idac_b.net3 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X742 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X743 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X744 x_pas.iv_net1 x_ota_iv.VBP_CASC x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X745 x_pas.iv_net1 x_ota_iv.VBN_CASC x_ota_iv.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=0.5
+X746 VDPWR x_ota_iv.VBP_TOP x_ota_iv.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X747 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X748 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X749 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X750 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X751 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X752 x_ota_vi.net2 x_pas.vi_net2 x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X753 ua[0] x_idac_c.net6 x_idac_c.net6 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=14
+X754 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X755 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X756 x_idac_b.net2 x_idac_b.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X757 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X758 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X759 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X760 x_core.net4 ua[5] x_core.lin_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X761 x_ota_vi.net7 x_ota_vi.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X762 x_ota_vi.net1 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X763 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X764 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=2.32 ps=16.58 w=8 l=4
+X765 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X766 x_ota_vi.VBN_CASC x_ota_vi.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X767 VGND x_idac_a.net5 x_idac_a.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X768 VGND x_idac_c.net5 x_idac_c.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X769 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X770 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X771 x_idac_b.out x_idac_b.net6 ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=0.87 ps=6.29 w=6 l=14
+X772 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X773 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X774 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VSTRP_OUT x_ota_iv.net15 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=4
+X775 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X776 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X777 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X778 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X779 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X780 x_ota_iv.net4 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X781 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X782 x_idac_a.net6 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X783 x_ota_iv.EN_B VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X784 a_58932_7161# VDPWR a_58778_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X785 a_56848_6913# a_57226_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X786 x_ota_vi.net3 ua[3] x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X787 x_ota_vi.net7 x_ota_vi.net9 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.29 ps=2.29 w=2 l=2
+X788 x_core.net3 x_core.iy_lin x_core.iy_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X789 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X790 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=2.32 ps=16.58 w=8 l=4
+X791 x_idac_b.net6 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X792 ua[2] x_pas.iv_net1 VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.3
+X793 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X794 x_idac_c.out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X795 ua[1] x_core.sq_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X796 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X797 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X798 x_ota_iv.net2 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X799 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X800 a_48601_8849# x_ota_vi.VBP_CASC a_48459_8849# VDPWR sky130_fd_pr__pfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X801 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X802 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X803 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X804 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X805 x_ota_iv.net14 x_ota_iv.VSTRP_IP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X806 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X807 VGND x_idac_c.out x_core.net5 VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X808 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X809 x_core.iz_lin x_core.iy_lin x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X810 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X811 VDPWR x_ota_vi.VBP_TOP x_ota_vi.VSTRP_IP VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X812 VGND x_ota_vi.net8 x_ota_vi.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X813 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X814 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X815 VGND x_aux.c_net1 x_aux.c_net1 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X816 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X817 ua[0] x_idac_a.net6 x_idac_a.out ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=14
+X818 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X819 ua[1] x_core.lin_out x_core.lin_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X820 a_58316_7161# VDPWR a_58162_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X821 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X822 x_core.iz_lin x_core.iy_lin x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X823 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X824 x_ota_vi.net2 x_ota_vi.VBN_CASC x_pas.vi_net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X825 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X826 x_ota_iv.net6 x_pas.x1_i_v_out x_ota_iv.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X827 a_56848_17513# a_56470_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X828 a_58316_17761# VDPWR a_58470_15703# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X829 x_ota_iv.EN_B VDPWR VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X830 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X831 VGND x_aux.c_net1 x_aux.c_net1 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.145 ps=1.29 w=1 l=7
+X832 x_ota_iv.VSTRP_IP x_ota_iv.VBP_TOP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X833 x_ota_iv.net4 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.725 pd=5.58 as=0.3625 ps=2.79 w=2.5 l=2
+X834 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X835 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X836 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X837 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X838 x_ota_vi.VSTRP_IP VDPWR a_58162_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X839 x_aux.c_net1 x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=7
+X840 VGND VDPWR a_59394_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X841 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X842 x_ota_vi.net6 ua[3] x_ota_vi.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X843 ua[1] x_core.net5 x_core.net6 ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X844 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X845 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X846 x_pas.vi_net1 x_ota_vi.VBP_CASC x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X847 x_ota_vi.net9 VDPWR VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X848 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X849 x_core.lin_out ua[5] x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X850 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X851 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X852 a_51178_17383# x_ota_iv.net12 VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X853 a_59240_7161# VDPWR a_59394_5103# VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=10
+X854 a_51934_6783# a_51556_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X855 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X856 x_ota_iv.net14 x_ota_iv.VSTRP_IP VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X857 x_aux.c_net1 x_aux.c_net1 VGND VGND sky130_fd_pr__nfet_01v8_lvt ad=0.145 pd=1.29 as=0.29 ps=2.58 w=1 l=7
+X858 ua[1] x_core.sq_out x_core.sq_out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X859 a_48601_19449# x_ota_iv.VBP_CASC a_48459_19449# VDPWR sky130_fd_pr__pfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X860 VDPWR VDPWR x_ota_iv.VBP_CASC VDPWR sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=2
+X861 x_ota_vi.VBP_CASC x_ota_vi.VBP_CASC a_48601_8849# VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0525 ps=0.71 w=0.5 l=0.5
+X862 a_56092_17513# a_56470_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X863 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X864 x_core.net1 x_idac_b.out x_idac_b.out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X865 x_core.net4 x_core.iy_lin x_core.iz_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X866 a_53446_17383# a_53068_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X867 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X868 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X869 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X870 x_idac_c.out x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X871 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X872 ua[0] x_idac_a.net6 x_idac_a.net6 ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.29 as=1.74 ps=12.58 w=6 l=14
+X873 VGND x_ota_vi.net8 x_ota_vi.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X874 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X875 a_55336_17513# a_55714_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X876 x_ota_iv.net6 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=2
+X877 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X878 ua[1] x_core.lin_out x_idac_c.out ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X879 VDPWR x_ota_vi.net5 x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X880 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X881 VGND x_ota_iv.net8 x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X882 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X883 VGND x_ota_iv.net8 x_ota_iv.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X884 x_ota_vi.net3 x_ota_vi.VBP_CASC x_ota_vi.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X885 x_idac_c.net3 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X886 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X887 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X888 VGND x_ota_iv.net8 x_ota_iv.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=2
+X889 x_ota_vi.net1 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X890 x_core.net4 ua[5] x_core.lin_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X891 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=1.16 ps=8.58 w=4 l=2
+X892 x_core.net2 ua[5] x_core.sq_out VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X893 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X894 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X895 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X896 x_aux.b2 x_aux.b2 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X897 x_ota_iv.net1 x_pas.x1_i_v_out x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X898 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X899 x_idac_c.net2 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X900 x_idac_a.net5 x_idac_a.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=7
+X901 VGND x_idac_c.out x_idac_c.out VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X902 x_pas.iv_net1 x_ota_iv.VBP_CASC x_ota_iv.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.145 ps=1.58 w=0.5 l=0.5
+X903 a_51934_17383# a_52312_15703# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X904 VGND x_ota_vi.net8 x_ota_vi.VBP_CASC VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=2
+X905 x_ota_iv.net3 x_ota_iv.VBP_CASC x_ota_iv.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X906 x_ota_vi.net3 x_ota_vi.VBP_CASC x_ota_vi.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X907 x_ota_iv.net6 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X908 x_ota_iv.net3 x_pas.x1_i_v_out x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X909 x_pas.iv_net1 x_ota_iv.VBN_CASC x_ota_iv.net2 VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X910 x_idac_a.Vbranch x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X911 x_core.net6 x_core.net5 ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.58 as=0.58 ps=4.29 w=4 l=2
+X912 VGND x_idac_b.net5 x_idac_b.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X913 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X914 x_ota_vi.net3 x_ota_vi.VBP_CASC x_ota_vi.net5 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X915 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X916 x_core.net5 x_core.net5 ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=2
+X917 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X918 x_ota_vi.net12 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X919 x_idac_c.Vbranch x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X920 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X921 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X922 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X923 x_ota_vi.net15 a_57226_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X924 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X925 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X926 x_ota_iv.net6 x_pas.x1_i_v_out x_ota_iv.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X927 x_core.net3 x_core.iy_lin x_core.iy_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X928 a_52690_6783# a_53068_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=6.4
+X929 x_ota_iv.net4 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net6 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X930 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X931 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X932 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X933 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X934 x_idac_c.net5 x_idac_c.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X935 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X936 VGND ua[5] VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X937 x_idac_c.net3 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X938 x_core.net4 x_core.iy_lin x_core.iz_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X939 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X940 x_ota_vi.net6 ua[3] x_ota_vi.net3 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.725 ps=5.58 w=2.5 l=2
+X941 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X942 x_ota_iv.net5 x_ota_iv.VBP_CASC x_ota_iv.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=0.5
+X943 x_idac_c.Vbranch x_aux.b3 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=7
+X944 x_ota_iv.net2 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X945 a_54580_6913# a_54958_5103# VGND sky130_fd_pr__res_xhigh_po_1p41 l=7.05
+X946 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X947 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X948 a_47669_12785# x_ota_iv.VBN_CASC VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.145 ps=1.58 w=0.5 l=0.5
+X949 x_ota_vi.MN_TAIL_BIAS x_ota_vi.EN_B VGND VGND sky130_fd_pr__nfet_01v8 ad=0.145 pd=1.58 as=0.145 ps=1.58 w=0.5 l=6.4
+X950 x_ota_vi.net6 x_pas.vi_net2 x_ota_vi.net4 VGND sky130_fd_pr__nfet_01v8_lvt ad=0.3625 pd=2.79 as=0.3625 ps=2.79 w=2.5 l=2
+X951 x_ota_iv.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X952 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X953 x_idac_a.out ua[5] x_core.net3 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X954 x_pas.vi_net2 x_pas.vi_net1 x_pas.vi_vmir VGND sky130_fd_pr__nfet_01v8_lvt ad=0.435 pd=3.29 as=0.87 ps=6.58 w=3 l=0.5
+X955 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=2.32 pd=16.58 as=1.16 ps=8.29 w=8 l=4
+X956 VGND x_ota_vi.net8 x_ota_vi.net1 VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X957 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X958 a_48379_12785# x_ota_iv.VBN_CASC a_48237_12785# VGND sky130_fd_pr__nfet_01v8 ad=0.0525 pd=0.71 as=0.0525 ps=0.71 w=0.5 l=0.5
+X959 x_core.iz_lin x_core.iy_lin x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X960 x_core.net2 x_idac_b.out x_core.iz_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X961 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X962 x_ota_iv.net4 x_ota_iv.VBP_CASC x_pas.iv_net1 VDPWR sky130_fd_pr__pfet_01v8 ad=0.145 pd=1.58 as=0.0725 ps=0.79 w=0.5 l=0.5
+X963 x_idac_a.net3 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X964 x_idac_c.net1 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X965 x_idac_b.net5 x_idac_b.net5 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.435 pd=3.29 as=0.435 ps=3.29 w=3 l=7
+X966 x_ota_vi.net7 ua[3] x_ota_vi.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X967 VDPWR x_ota_vi.net5 x_ota_vi.net4 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.29 ps=2.29 w=2 l=2
+X968 x_core.sq_out x_core.sq_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=2.32 pd=16.58 as=1.16 ps=8.29 w=8 l=4
+X969 x_ota_vi.net1 x_ota_vi.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X970 x_ota_vi.net1 ua[3] x_ota_vi.net7 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X971 x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=2.9 ps=20.58 w=10 l=4
+X972 x_core.sq_out ua[5] x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X973 x_core.iz_lin x_core.iy_lin x_core.net4 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X974 x_ota_iv.net7 x_pas.x1_i_v_out x_ota_iv.net1 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X975 x_idac_c.net4 x_idac_c.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X976 x_idac_c.out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X977 x_idac_a.net2 x_idac_a.Vbranch ua[0] ua[0] sky130_fd_pr__pfet_01v8 ad=0.87 pd=6.58 as=0.87 ps=6.58 w=3 l=7
+X978 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X979 x_core.net1 ua[5] x_core.ix_sq VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X980 x_ota_iv.net2 x_ota_iv.net8 VGND VGND sky130_fd_pr__nfet_01v8 ad=0.0725 pd=0.79 as=0.0725 ps=0.79 w=0.5 l=2
+X981 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X982 x_core.lin_out x_core.lin_out ua[1] ua[1] sky130_fd_pr__pfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=4
+X983 x_ota_vi.net7 x_pas.vi_net2 x_ota_vi.net2 VDPWR sky130_fd_pr__pfet_01v8_lvt ad=0.58 pd=4.29 as=0.58 ps=4.29 w=4 l=2
+X984 VDPWR x_ota_vi.net5 x_ota_vi.net3 VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.29 as=0.58 ps=4.58 w=2 l=2
+X985 VGND x_ota_vi.MN_TAIL_BIAS x_ota_vi.MN_TAIL_BIAS VGND sky130_fd_pr__nfet_01v8 ad=2.9 pd=20.58 as=1.45 ps=10.29 w=10 l=4
+X986 x_core.net5 x_idac_c.out VGND VGND sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.29 as=1.16 ps=8.29 w=8 l=2
+X987 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X988 x_ota_vi.net14 x_ota_vi.VSTRP_IP VDPWR VDPWR sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.5 ps=3 w=1 l=0.15
+X989 VGND x_idac_a.net5 x_idac_a.net5 VGND sky130_fd_pr__nfet_01v8 ad=0.87 pd=6.58 as=0.435 ps=3.29 w=3 l=7
+X990 VGND VGND VGND VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=0 ps=0 w=8 l=4
+X991 x_idac_b.out x_idac_b.out x_core.net1 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X992 x_ota_vi.VBP_TOP x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+X993 x_core.net3 x_core.iy_lin x_core.iy_lin VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X994 x_core.iz_sq x_idac_b.out x_core.net2 VGND sky130_fd_pr__nfet_01v8 ad=2.32 pd=16.58 as=2.32 ps=16.58 w=8 l=4
+X995 x_ota_iv.net12 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP VGND sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.29 as=1.45 ps=10.29 w=10 l=4
+C0 x_ota_iv.net6 x_pas.x1_i_v_out 3.22026f
+C1 a_57226_5103# x_ota_vi.net15 0.01323f
+C2 a_23426_13375# x_core.sq_out 0.02864f
+C3 x_pas.vi_net1 x_idac_a.out 0.12951f
+C4 ui_in[2] x_idac_b.net6 0.52486f
+C5 x_core.net4 ua[5] 14.7584f
+C6 x_ota_iv.net6 x_pas.iv_net1 0.09543f
+C7 uio_in[0] uio_in[3] 0.22137f
+C8 x_core.iy_lin x_pas.vi_vmir 0.60222f
+C9 ui_in[7] x_idac_b.net6 3.1073f
+C10 x_ota_iv.EN_B x_ota_iv.net8 0.08622f
+C11 a_58656_34725# x_aux.b4 0.01093f
+C12 ua[3] x_idac_b.out 0.84776f
+C13 x_idac_c.out x_idac_b.net6 0.19733f
+C14 x_idac_a.out x_idac_a.Vbranch 1.08175f
+C15 ua[5] x_core.net3 22.3033f
+C16 x_idac_a.out ua[4] 1.01594f
+C17 x_core.net2 ua[5] 17.8571f
+C18 x_idac_a.net6 a_43212_40984# 0.08122f
+C19 VDPWR x_pas.vi_net2 15.3697f
+C20 x_idac_c.net2 x_idac_c.net6 0.09587f
+C21 x_ota_iv.EN_B x_ota_iv.VBP_TOP 0.18339f
+C22 ui_in[5] ui_in[1] 2.23226f
+C23 a_55336_6913# a_54958_5103# 0.01317f
+C24 x_ota_iv.VSTRP_IP x_ota_iv.VBP_TOP 1.1328f
+C25 ua[5] x_core.net1 22.7012f
+C26 VDPWR a_60166_37419# 0.01259f
+C27 a_54580_17513# x_ota_vi.MN_TAIL_BIAS 0.02295f
+C28 x_ota_iv.EN_B x_ota_iv.VBN_CASC 0.25548f
+C29 x_idac_b.Vbranch x_idac_a.out 0.52893f
+C30 ui_in[0] x_idac_a.Vbranch 2.85057f
+C31 x_ota_iv.VBP_CASC x_ota_iv.net8 3.7608f
+C32 x_ota_vi.MN_TAIL_BIAS x_aux.c_net1 0.14945f
+C33 x_core.sq_out x_idac_b.out 27.2947f
+C34 x_ota_iv.net8 x_ota_iv.VBP_TOP 0.44833f
+C35 x_ota_iv.net7 x_ota_iv.EN_B 0.01622f
+C36 x_idac_b.out uio_in[1] 0.08017f
+C37 x_ota_vi.MN_TAIL_BIAS a_53824_15703# 0.20816f
+C38 x_core.lin_out x_idac_b.out 0.71543f
+C39 x_aux.b4 ua[0] 0.05657f
+C40 x_pas.x1_i_v_out x_core.net4 0.09716f
+C41 uio_out[5] uio_out[6] 0.03102f
+C42 uio_in[2] x_idac_b.out 0.03305f
+C43 x_ota_iv.net8 x_ota_iv.VBN_CASC 0.11955f
+C44 x_idac_c.Vbranch x_idac_a.out 1.93763f
+C45 x_aux.c_net1 x_pas.vi_vmir 8.11624f
+C46 x_idac_a.net1 ui_in[2] 5.72388f
+C47 x_idac_b.Vbranch ui_in[0] 0.08748f
+C48 x_ota_iv.net7 x_ota_iv.net8 0.36743f
+C49 a_54580_6913# a_55336_6913# 0.29626f
+C50 x_idac_a.net4 ui_in[2] 5.74681f
+C51 x_core.net6 x_idac_b.out 0.17308f
+C52 x_ota_vi.MN_TAIL_BIAS a_53446_17383# 0.07907f
+C53 x_core.net4 ua[3] 0.13252f
+C54 x_pas.vi_net1 VDPWR 4.8698f
+C55 x_core.net5 x_idac_b.out 0.13309f
+C56 x_ota_vi.MN_TAIL_BIAS a_53068_15703# 0.04985f
+C57 x_pas.x1_i_v_out x_core.net2 0.08591f
+C58 x_ota_vi.MN_TAIL_BIAS a_55714_5103# 0.01994f
+C59 x_pas.x1_i_v_out x_core.net3 0.08915f
+C60 x_ota_iv.VBP_CASC x_ota_iv.VBN_CASC 0.10706f
+C61 x_pas.vi_vmir ua[2] 0.12761f
+C62 x_idac_c.net6 VDPWR_uq0 0.02147f
+C63 x_ota_iv.VBN_CASC x_ota_iv.VBP_TOP 0.01335f
+C64 a_36012_9830# x_core.iz_sq 0.02867f
+C65 a_54580_6913# a_54958_5103# 0.01317f
+C66 x_idac_c.Vbranch ui_in[0] 0.0727f
+C67 x_idac_a.net6 a_34260_40984# 0.25806f
+C68 x_ota_iv.net7 x_ota_iv.VBP_CASC 0.27354f
+C69 x_idac_a.out x_core.iz_lin 10.7772f
+C70 x_idac_a.out x_core.ix_sq 1.00378f
+C71 x_ota_iv.net7 x_ota_iv.VBP_TOP 0.06186f
+C72 x_idac_a.out x_core.iz_sq 2.28998f
+C73 x_pas.x1_i_v_out x_core.net1 0.09816f
+C74 x_idac_a.net3 ui_in[2] 0.04622f
+C75 x_ota_iv.VBP_CASC x_ota_iv.net4 0.64592f
+C76 x_core.net3 ua[3] 0.24356f
+C77 VDPWR x_idac_a.Vbranch 0.77102f
+C78 x_core.net2 ua[3] 0.41438f
+C79 x_idac_a.net5 ui_in[2] 0.29442f
+C80 uio_oe[5] uio_oe[4] 0.03102f
+C81 rst_n ui_in[0] 0.03359f
+C82 x_ota_iv.net7 x_ota_iv.VBN_CASC 0.88994f
+C83 x_idac_a.net2 ui_in[2] 0.05079f
+C84 a_24106_9830# x_core.iz_sq 0.02121f
+C85 ua[1] x_pas.vi_net1 0.45585f
+C86 ui_in[1] x_idac_b.out 0.22187f
+C87 a_23426_9830# x_core.iz_sq 0.02867f
+C88 x_ota_vi.MN_TAIL_BIAS a_52690_17383# 0.01484f
+C89 a_52312_15703# x_ota_vi.MN_TAIL_BIAS 0.01484f
+C90 x_ota_iv.VBN_CASC x_ota_iv.net4 0.93319f
+C91 x_core.sq_out x_core.net4 1.16562f
+C92 x_core.net1 ua[3] 0.29962f
+C93 x_ota_iv.VSTRP_IP x_ota_iv.net9 0.01073f
+C94 x_idac_a.net5 x_idac_c.out 1.29845f
+C95 ui_in[0] x_core.iz_lin 0.06041f
+C96 x_core.lin_out x_core.net4 20.5922f
+C97 ui_in[0] x_core.ix_sq 0.06029f
+C98 ui_in[0] x_core.iz_sq 0.06029f
+C99 x_ota_vi.MN_TAIL_BIAS a_51556_15703# 0.01278f
+C100 x_core.iy_lin ua[0] 0.84327f
+C101 x_idac_a.out x_aux.b3 0.9433f
+C102 ui_in[7] x_idac_b.net1 5.59182f
+C103 a_26852_42731# ui_in[4] 0.03211f
+C104 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net12 18.9798f
+C105 x_idac_b.Vbranch VDPWR 0.49039f
+C106 x_ota_iv.net8 x_ota_iv.net9 0.3269f
+C107 ui_in[7] x_idac_b.net4 0.05056f
+C108 ui_in[7] x_idac_b.net3 0.05019f
+C109 ua[1] ua[4] 18.8183f
+C110 uio_oe[6] uio_oe[7] 0.03102f
+C111 x_core.sq_out x_core.net3 1.16641f
+C112 x_core.sq_out x_core.net2 72.0482f
+C113 x_core.net6 x_core.net4 0.08604f
+C114 x_aux.v_mir_out x_idac_a.out 0.13471f
+C115 a_56092_6913# VDPWR 0.01006f
+C116 a_30132_18739# a_28838_18739# 0.0234f
+C117 x_idac_a.out x_aux.b2 0.08759f
+C118 VDPWR a_56470_5103# 0.01087f
+C119 x_ota_iv.VBP_CASC x_ota_iv.net3 0.86825f
+C120 a_54350_31747# x_idac_b.out 0.02243f
+C121 x_ota_iv.net8 x_ota_iv.net5 0.20888f
+C122 x_core.net4 x_core.net5 0.08612f
+C123 x_core.lin_out x_core.net3 5.34698f
+C124 ui_in[7] x_idac_b.net5 0.29857f
+C125 x_pas.x1_i_v_out x_ota_iv.net8 0.16448f
+C126 x_core.lin_out x_core.net2 0.61767f
+C127 VDPWR x_idac_c.Vbranch 0.48433f
+C128 a_50540_31747# x_idac_b.out 0.02171f
+C129 x_ota_iv.VBP_CASC x_ota_iv.net9 3.42609f
+C130 x_idac_c.out x_idac_b.net5 2.08675f
+C131 x_pas.iv_net1 x_ota_iv.net8 0.656f
+C132 x_core.sq_out x_core.net1 1.78363f
+C133 x_ota_iv.VBP_TOP x_ota_iv.net9 2.3028f
+C134 ui_in[7] x_idac_b.net2 0.05513f
+C135 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net2 12.0964f
+C136 x_ota_iv.VBN_CASC x_ota_iv.net3 0.12551f
+C137 x_pas.vi_net2 x_aux.b4 0.0374f
+C138 a_28838_18739# a_28338_18739# 0.08811f
+C139 x_core.lin_out x_core.net1 0.71456f
+C140 ui_in[0] x_idac_b.net6 0.22368f
+C141 x_ota_iv.net1 x_ota_vi.MN_TAIL_BIAS 3.88143f
+C142 x_core.net6 x_core.net2 0.08591f
+C143 x_core.net6 x_core.net3 0.08596f
+C144 x_ota_iv.VBN_CASC x_ota_iv.net9 6.04432f
+C145 x_ota_iv.net7 x_ota_iv.net3 0.02782f
+C146 x_ota_iv.VBP_CASC x_ota_iv.net5 0.65889f
+C147 x_core.net5 x_core.net3 0.08597f
+C148 x_ota_iv.VBP_CASC x_pas.x1_i_v_out 0.18221f
+C149 x_core.net5 x_core.net2 0.08591f
+C150 x_ota_iv.net4 x_ota_iv.net3 3.69367f
+C151 ui_in[5] a_26852_42731# 0.03672f
+C152 a_34260_31747# x_idac_b.out 0.02472f
+C153 x_ota_iv.VBP_CASC x_pas.iv_net1 0.83129f
+C154 VDPWR a_62562_38797# 0.33983f
+C155 x_ota_iv.net7 x_ota_iv.net9 4.93703f
+C156 VDPWR x_core.iz_lin 0.89492f
+C157 x_core.net6 x_core.net1 0.0979f
+C158 VDPWR x_core.iz_sq 0.71547f
+C159 x_core.iy_lin ui_in[3] 0.02782f
+C160 x_pas.iv_net1 x_ota_iv.VBP_TOP 0.06883f
+C161 ui_in[6] ui_in[2] 1.59001f
+C162 VDPWR x_core.ix_sq 0.68681f
+C163 x_ota_iv.VBN_CASC x_ota_iv.net5 0.57848f
+C164 x_aux.b1 x_idac_a.out 0.10197f
+C165 VDPWR a_57226_5103# 0.06994f
+C166 x_core.net5 x_core.net1 0.09784f
+C167 x_pas.x1_i_v_out x_ota_iv.VBN_CASC 0.67701f
+C168 x_ota_iv.net7 x_ota_iv.net5 0.09176f
+C169 ui_in[7] ui_in[6] 6.81957f
+C170 VDPWR a_56016_38797# 0.39015f
+C171 x_aux.c_net1 ua[0] 0.05556f
+C172 x_pas.iv_net1 x_ota_iv.VBN_CASC 0.64179f
+C173 x_ota_iv.net7 x_pas.x1_i_v_out 10.6061f
+C174 x_ota_iv.net4 x_ota_iv.net5 2.04727f
+C175 ui_in[6] x_idac_c.out 0.07976f
+C176 a_61124_36681# x_aux.c_net1 0.06059f
+C177 x_ota_iv.net7 x_pas.iv_net1 3.14697f
+C178 x_pas.x1_i_v_out x_ota_iv.net4 0.76627f
+C179 a_55714_15703# x_pas.vi_net2 0.01309f
+C180 a_50540_41878# ua[0] 0.04776f
+C181 x_pas.iv_net1 x_ota_iv.net4 0.4727f
+C182 VDPWR a_55516_38797# 0.34978f
+C183 x_pas.x1_i_v_out a_30132_18739# 0.33395f
+C184 ua[0] ua[2] 6.07613f
+C185 uio_in[0] x_idac_c.Vbranch 3.31539f
+C186 a_53446_6783# a_53824_5103# 0.01451f
+C187 a_34260_32765# x_idac_b.out 0.03272f
+C188 x_idac_a.net1 x_idac_a.out 0.03923f
+C189 x_pas.x1_i_v_out ua[5] 0.03739f
+C190 a_53068_5103# a_53824_5103# 0.29626f
+C191 ua[1] x_core.iz_lin 1.03583f
+C192 VDPWR x_aux.b3 0.37116f
+C193 ua[1] x_core.ix_sq 0.50196f
+C194 x_pas.vi_net1 x_aux.b4 0.04812f
+C195 ua[1] x_core.iz_sq 0.3808f
+C196 x_idac_a.net4 x_idac_a.out 0.02964f
+C197 x_idac_c.net2 ua[0] 0.89831f
+C198 a_55336_17513# x_pas.vi_net2 0.02196f
+C199 x_pas.vi_net2 a_54958_15703# 0.03661f
+C200 a_53446_6783# a_53068_5103# 0.01451f
+C201 a_56848_6913# a_56470_5103# 0.01317f
+C202 a_56092_6913# a_56848_6913# 0.29626f
+C203 x_ota_iv.net9 x_ota_iv.net3 0.122f
+C204 x_core.iy_lin x_pas.vi_net2 0.28803f
+C205 x_aux.v_mir_out VDPWR 6.03101f
+C206 VDPWR x_aux.b2 0.6996f
+C207 ua[5] ua[3] 1.34294f
+C208 x_idac_a.net1 ui_in[0] 0.08773f
+C209 x_idac_a.Vbranch x_aux.b4 0.15444f
+C210 x_idac_c.net2 uio_in[3] 0.05513f
+C211 x_ota_iv.net5 x_ota_iv.net3 2.27738f
+C212 x_idac_a.net3 x_idac_a.out 0.02335f
+C213 x_idac_a.net4 ui_in[0] 0.08798f
+C214 a_17900_42731# uio_in[0] 0.06786f
+C215 x_pas.x1_i_v_out x_ota_iv.net3 2.77389f
+C216 x_idac_a.net5 x_idac_a.out 1.46678f
+C217 x_ota_iv.net9 x_ota_iv.net5 0.06576f
+C218 x_pas.iv_net1 x_ota_iv.net3 0.3469f
+C219 a_53446_6783# a_52690_6783# 0.29626f
+C220 a_52690_6783# a_53068_5103# 0.01451f
+C221 a_53068_5103# a_52312_5103# 0.29626f
+C222 a_26852_42731# x_idac_b.out 0.05015f
+C223 x_pas.x1_i_v_out x_ota_iv.net9 0.12458f
+C224 x_ota_vi.MN_TAIL_BIAS x_idac_b.out 0.52644f
+C225 x_ota_iv.net6 x_ota_vi.MN_TAIL_BIAS 3.10846f
+C226 x_pas.iv_net1 x_ota_iv.net9 0.371f
+C227 x_idac_b.Vbranch x_aux.b4 0.14983f
+C228 VDPWR a_50540_38797# 0.3518f
+C229 x_aux.b1 VDPWR 4.61763f
+C230 x_core.sq_out ua[5] 19.9216f
+C231 x_pas.x1_i_v_out x_ota_iv.net5 1.84192f
+C232 x_idac_a.net3 ui_in[0] 6.00418f
+C233 a_57226_5103# a_56848_6913# 0.01317f
+C234 x_pas.iv_net1 x_ota_iv.net5 2.99096f
+C235 x_pas.vi_vmir x_idac_b.out 1.16179f
+C236 x_idac_a.net5 ui_in[0] 5.90693f
+C237 ua[0] ui_in[4] 0.97335f
+C238 ua[0] VDPWR_uq0 0.01615f
+C239 x_idac_a.net2 ui_in[0] 0.95719f
+C240 x_core.lin_out ua[5] 13.8431f
+C241 a_52690_6783# a_52312_5103# 0.01451f
+C242 x_pas.x1_i_v_out x_pas.iv_net1 2.29732f
+C243 uio_in[0] x_idac_b.net6 2.13154f
+C244 uio_oe[2] uio_oe[3] 0.03102f
+C245 x_pas.vi_net1 x_core.iy_lin 5.81307f
+C246 x_idac_c.Vbranch x_aux.b4 3.86714f
+C247 x_idac_a.net6 ui_in[1] 3.69975f
+C248 a_61392_37419# x_aux.c_net1 0.0118f
+C249 x_core.net6 a_30132_18739# 0.05934f
+C250 a_54580_17513# x_pas.vi_net2 0.05936f
+C251 a_52690_6783# a_51934_6783# 0.29626f
+C252 x_core.net6 a_28838_18739# 0.34059f
+C253 a_51934_6783# a_52312_5103# 0.01451f
+C254 x_pas.x1_i_v_out ua[3] 0.18832f
+C255 x_core.net6 ua[5] 0.09254f
+C256 x_aux.c_net1 x_pas.vi_net2 0.20129f
+C257 a_52312_5103# a_51556_5103# 0.29626f
+C258 x_core.net5 ua[5] 0.07696f
+C259 a_59666_37419# x_aux.c_net1 0.06858f
+C260 x_core.iy_lin x_idac_a.Vbranch 0.20765f
+C261 x_core.net6 a_28338_18739# 0.03489f
+C262 a_60166_37419# x_aux.c_net1 0.04797f
+C263 x_core.iy_lin ua[4] 0.7025f
+C264 a_51934_6783# a_51556_5103# 0.01451f
+C265 x_pas.vi_net2 ua[2] 0.0124f
+C266 x_core.iz_lin x_aux.b4 0.06937f
+C267 x_core.iz_sq x_aux.b4 0.05557f
+C268 ui_in[5] ua[0] 0.5342f
+C269 x_core.ix_sq x_aux.b4 0.08083f
+C270 ui_in[3] ui_in[4] 0.68828f
+C271 x_core.sq_out x_pas.x1_i_v_out 0.03725f
+C272 x_idac_b.Vbranch x_core.iy_lin 0.18102f
+C273 x_ota_vi.net12 a_51556_5103# 0.32707f
+C274 a_19678_22197# a_19178_22197# 0.08811f
+C275 x_core.lin_out x_pas.x1_i_v_out 0.06063f
+C276 a_17900_40984# uio_in[2] 0.02098f
+C277 x_aux.b3 x_aux.b4 0.21579f
+C278 x_core.sq_out ua[3] 0.35179f
+C279 x_pas.vi_net1 x_aux.c_net1 0.25084f
+C280 ui_in[6] ui_in[0] 0.01857f
+C281 x_core.sq_out a_37216_22197# 0.02937f
+C282 x_core.iy_lin x_idac_c.Vbranch 0.17226f
+C283 x_core.net6 x_pas.x1_i_v_out 8.52018f
+C284 x_core.lin_out ua[3] 0.08901f
+C285 a_19678_22197# x_core.sq_out 0.06291f
+C286 x_pas.x1_i_v_out x_core.net5 0.1599f
+C287 x_core.sq_out a_19178_22197# 0.41635f
+C288 a_51934_6783# a_51178_6783# 0.29626f
+C289 x_aux.b2 x_aux.b4 5.10661f
+C290 x_core.lin_out a_37216_22197# 0.38873f
+C291 x_aux.v_mir_out x_aux.b4 0.12587f
+C292 a_51178_6783# a_51556_5103# 0.01451f
+C293 x_core.sq_out a_1640_22197# 0.34058f
+C294 x_pas.vi_net1 ua[2] 2.06431f
+C295 x_core.lin_out a_19678_22197# 0.34058f
+C296 ui_in[5] ui_in[3] 2.28223f
+C297 x_aux.c_net1 x_idac_a.Vbranch 1.12076f
+C298 x_core.lin_out a_19178_22197# 0.03489f
+C299 x_ota_vi.net1 x_ota_vi.net2 7.57349f
+C300 x_ota_iv.net15 x_ota_vi.MN_TAIL_BIAS 0.21057f
+C301 x_ota_iv.net12 x_pas.vi_net2 0.11216f
+C302 a_37216_24584# x_core.sq_out 0.05689f
+C303 a_19178_24584# a_19678_24584# 0.08811f
+C304 x_core.iy_lin x_core.iz_lin 33.9231f
+C305 x_idac_a.net6 a_44844_32765# 0.12797f
+C306 x_ota_iv.VSTRP_OUT x_ota_vi.MN_TAIL_BIAS 0.2215f
+C307 x_core.iy_lin x_core.iz_sq 1.88861f
+C308 x_core.iy_lin x_core.ix_sq 7.24278f
+C309 x_ota_vi.net12 a_51178_6783# 0.01488f
+C310 x_core.lin_out a_37216_24584# 0.02449f
+C311 ua[4] ua[2] 3.2379f
+C312 a_34260_42731# ui_in[1] 0.05021f
+C313 x_ota_iv.EN_B x_ota_vi.MN_TAIL_BIAS 0.285f
+C314 x_core.lin_out a_19178_24584# 0.05534f
+C315 x_core.lin_out x_core.sq_out 14.5924f
+C316 ua[0] x_idac_b.out 3.80904f
+C317 x_ota_vi.net6 x_ota_vi.net1 4.12887f
+C318 x_ota_vi.net6 x_ota_vi.net2 1.33724f
+C319 x_ota_iv.VSTRP_IP x_ota_vi.MN_TAIL_BIAS 1.56547f
+C320 x_idac_b.Vbranch x_aux.c_net1 3.81493f
+C321 a_23426_2740# a_24106_2740# 0.05507f
+C322 uio_in[2] uio_in[1] 6.94304f
+C323 x_aux.b1 x_aux.b4 0.21435f
+C324 x_core.lin_out a_7280_26971# 0.02061f
+C325 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net8 0.9336f
+C326 x_core.net6 x_core.sq_out 0.7295f
+C327 x_core.iy_lin x_aux.b3 0.10572f
+C328 uio_in[3] x_idac_b.out 0.07808f
+C329 x_core.sq_out x_core.net5 0.06897f
+C330 x_idac_c.Vbranch x_aux.c_net1 1.91486f
+C331 x_core.lin_out x_core.net6 0.76606f
+C332 uio_out[0] uo_out[7] 0.03102f
+C333 x_core.lin_out x_core.net5 0.40002f
+C334 x_core.net6 a_7280_26971# 0.19304f
+C335 uio_oe[4] uio_oe[3] 0.03102f
+C336 uio_in[0] x_idac_c.net1 0.08773f
+C337 a_53446_6783# x_ota_vi.VBP_TOP 0.02047f
+C338 x_core.iy_lin x_aux.b2 0.22093f
+C339 x_aux.v_mir_out x_core.iy_lin 0.27033f
+C340 x_core.net5 a_7280_26971# 0.05371f
+C341 a_53068_5103# x_ota_vi.VBP_TOP 0.06155f
+C342 x_ota_iv.VBP_CASC x_ota_vi.MN_TAIL_BIAS 0.28353f
+C343 x_idac_a.net6 a_44844_33903# 0.04083f
+C344 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBP_TOP 20.4159f
+C345 x_core.net6 a_1640_26971# 0.16888f
+C346 x_core.net6 x_core.net5 27.158f
+C347 x_idac_a.net6 a_34260_33903# 0.12723f
+C348 uio_in[0] x_idac_c.net4 0.08798f
+C349 x_aux.c_net1 x_core.iz_lin 0.04754f
+C350 a_56092_6913# a_55714_5103# 0.01317f
+C351 x_idac_c.net2 x_idac_c.Vbranch 1.3136f
+C352 a_55714_5103# a_56470_5103# 0.29626f
+C353 x_aux.c_net1 x_core.ix_sq 0.04941f
+C354 x_ota_vi.MN_TAIL_BIAS x_ota_iv.VBN_CASC 0.94225f
+C355 uio_in[0] x_idac_c.net3 6.00418f
+C356 x_aux.c_net1 x_core.iz_sq 0.03832f
+C357 ui_in[3] x_idac_b.out 0.22208f
+C358 x_ota_iv.net7 x_ota_vi.MN_TAIL_BIAS 11.2356f
+C359 x_pas.vi_net1 x_ota_iv.net2 0.26f
+C360 a_52690_6783# x_ota_vi.VBP_TOP 0.15336f
+C361 a_52312_5103# x_ota_vi.VBP_TOP 0.12536f
+C362 uio_in[0] x_idac_c.net5 5.90693f
+C363 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net4 2.89852f
+C364 x_core.iz_lin ua[2] 0.19484f
+C365 x_core.net4 ua[0] 0.15f
+C366 VDPWR a_55336_6913# 0.02385f
+C367 x_core.ix_sq ua[2] 0.269f
+C368 x_core.iz_sq ua[2] 0.23539f
+C369 x_pas.vi_net1 x_ota_iv.net1 0.18507f
+C370 a_51934_6783# x_ota_vi.VBP_TOP 0.03457f
+C371 ui_in[7] ui_in[2] 0.1849f
+C372 x_aux.b1 x_core.iy_lin 0.10296f
+C373 uo_out[3] uo_out[4] 0.03102f
+C374 a_51556_5103# x_ota_vi.VBP_TOP 0.01472f
+C375 a_59240_8093# x_ota_vi.VSTRP_OUT 0.17133f
+C376 a_23426_6285# a_24106_6285# 0.05507f
+C377 x_idac_b.Vbranch ui_in[4] 2.81976f
+C378 x_aux.c_net1 x_aux.b3 0.36363f
+C379 ui_in[7] x_idac_c.out 0.07976f
+C380 VDPWR a_54958_5103# 0.33635f
+C381 a_59240_8093# x_ota_vi.net14 0.03632f
+C382 a_59240_8093# x_ota_vi.EN_B 0.22583f
+C383 x_ota_vi.net8 x_ota_vi.net1 0.6262f
+C384 ua[0] x_core.net3 0.20354f
+C385 x_ota_vi.net8 x_ota_vi.net2 1.27439f
+C386 x_core.net2 ua[0] 0.10701f
+C387 x_aux.v_mir_out x_aux.c_net1 5.12613f
+C388 x_aux.c_net1 x_aux.b2 0.50538f
+C389 x_ota_vi.net12 x_ota_vi.VBP_TOP 6.13805f
+C390 x_pas.vi_net2 x_idac_b.out 0.12121f
+C391 uio_in[5] uio_in[6] 0.03102f
+C392 x_idac_c.Vbranch ui_in[4] 0.07298f
+C393 x_ota_vi.VBP_CASC x_ota_vi.net1 0.13404f
+C394 x_ota_vi.VBP_CASC x_ota_vi.net2 0.56306f
+C395 ua[0] x_core.net1 0.13236f
+C396 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net3 1.04464f
+C397 x_ota_vi.VBN_CASC x_ota_vi.net1 0.33044f
+C398 x_ota_vi.VBN_CASC x_ota_vi.net2 1.10729f
+C399 x_ota_vi.net8 x_ota_vi.net6 1.96582f
+C400 x_ota_vi.net12 x_ota_vi.net7 0.40655f
+C401 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net9 0.46273f
+C402 x_idac_a.net6 a_43212_42731# 0.05583f
+C403 a_54580_6913# VDPWR 0.16241f
+C404 x_ota_vi.net1 x_ota_vi.net7 11.9474f
+C405 x_ota_vi.net7 x_ota_vi.net2 13.1593f
+C406 x_idac_c.net6 a_10492_40984# 0.08122f
+C407 x_ota_vi.net4 x_ota_vi.net2 0.03057f
+C408 x_ota_vi.VBP_CASC x_ota_vi.net6 0.06823f
+C409 x_idac_b.Vbranch ui_in[5] 0.20815f
+C410 x_ota_vi.MN_TAIL_BIAS x_ota_iv.net5 0.22518f
+C411 x_ota_vi.net6 x_ota_vi.VBN_CASC 0.05256f
+C412 x_pas.x1_i_v_out x_ota_vi.MN_TAIL_BIAS 20.2342f
+C413 x_ota_vi.net3 x_ota_vi.net2 0.27651f
+C414 x_core.iy_lin x_idac_a.net5 0.0186f
+C415 x_ota_vi.VSTRP_OUT x_ota_vi.net15 0.05912f
+C416 x_aux.b1 x_aux.c_net1 0.26086f
+C417 x_ota_vi.net1 x_ota_vi.net3 0.01214f
+C418 a_43212_40984# ua[0] 1.62794f
+C419 uo_out[6] uo_out[7] 0.03102f
+C420 x_ota_vi.MN_TAIL_BIAS x_pas.iv_net1 4.95492f
+C421 a_51178_6783# x_ota_vi.net7 0.04212f
+C422 x_ota_vi.net9 x_ota_vi.net1 0.11447f
+C423 x_ota_vi.net9 x_ota_vi.net2 0.7148f
+C424 x_ota_vi.net6 x_ota_vi.net7 0.46156f
+C425 x_ota_vi.net5 x_ota_vi.net2 0.27541f
+C426 x_ota_vi.net15 x_ota_vi.EN_B 0.08633f
+C427 x_ota_vi.net1 x_ota_vi.net5 2.49984f
+C428 x_ota_vi.net6 x_ota_vi.net4 3.39501f
+C429 x_idac_c.Vbranch ui_in[5] 0.06735f
+C430 x_ota_vi.VSTRP_OUT x_ota_vi.EN_B 0.24133f
+C431 x_idac_c.net6 uio_in[1] 0.0677f
+C432 x_ota_vi.VSTRP_OUT x_ota_vi.net14 0.8894f
+C433 x_pas.vi_net1 x_idac_b.out 0.12112f
+C434 VDPWR a_53824_5103# 0.31007f
+C435 x_ota_vi.net14 x_ota_vi.EN_B 0.11446f
+C436 x_pas.x1_i_v_out x_pas.vi_vmir 0.14093f
+C437 x_pas.vi_net1 x_ota_iv.net6 0.12258f
+C438 x_ota_vi.VSTRP_IP x_ota_vi.net15 0.45271f
+C439 a_54850_31747# a_54350_31747# 0.01344f
+C440 x_ota_vi.net6 x_ota_vi.net3 3.46455f
+C441 x_ota_vi.VSTRP_IP x_ota_vi.VSTRP_OUT 0.12024f
+C442 uio_in[2] x_idac_c.net6 0.08055f
+C443 x_idac_c.net6 a_1540_40984# 0.25806f
+C444 x_ota_vi.net6 x_ota_vi.net5 0.07806f
+C445 x_ota_vi.VSTRP_IP x_ota_vi.net14 0.54919f
+C446 x_ota_vi.VSTRP_IP x_ota_vi.EN_B 0.12648f
+C447 x_idac_a.net6 ua[0] 22.4071f
+C448 x_idac_b.net6 ui_in[4] 0.69927f
+C449 x_idac_a.Vbranch x_idac_b.out 0.216f
+C450 ua[4] x_idac_b.out 1.75257f
+C451 x_ota_vi.net8 x_ota_vi.EN_B 0.08622f
+C452 a_43212_40984# ui_in[3] 0.02316f
+C453 x_ota_vi.VBP_TOP x_ota_vi.EN_B 0.18339f
+C454 x_ota_vi.VBN_CASC x_ota_vi.EN_B 0.25548f
+C455 x_idac_a.out ui_in[2] 0.31742f
+C456 x_idac_b.Vbranch x_idac_b.out 0.35702f
+C457 ua[0] a_34260_40984# 1.25191f
+C458 a_58656_41011# VDPWR 0.34493f
+C459 x_ota_vi.VSTRP_IP x_ota_vi.VBP_TOP 1.1328f
+C460 uo_out[0] uo_out[1] 0.03102f
+C461 x_ota_vi.net7 x_ota_vi.EN_B 0.01622f
+C462 ua[0] a_30132_18739# 0.05905f
+C463 x_idac_a.out x_idac_c.out 1.58491f
+C464 ua[0] a_28838_18739# 0.0161f
+C465 ua[0] ua[5] 0.78246f
+C466 ui_in[5] x_idac_b.net6 1.19917f
+C467 x_ota_vi.VBP_CASC x_ota_vi.net8 3.7608f
+C468 x_ota_vi.net8 x_ota_vi.VBP_TOP 0.44833f
+C469 x_ota_vi.net8 x_ota_vi.VBN_CASC 0.11955f
+C470 x_idac_c.Vbranch x_idac_b.out 0.19633f
+C471 x_idac_a.net6 ui_in[3] 2.70746f
+C472 ui_in[0] ui_in[2] 2.0745f
+C473 VDPWR x_ota_vi.net12 0.06669f
+C474 x_ota_iv.EN_B x_pas.vi_net2 0.05197f
+C475 x_ota_vi.VBP_CASC x_ota_vi.VBN_CASC 0.10706f
+C476 x_ota_vi.net8 x_ota_vi.net7 0.36743f
+C477 ui_in[7] ui_in[0] 0.48516f
+C478 x_ota_vi.VBN_CASC x_ota_vi.VBP_TOP 0.01335f
+C479 VDPWR x_ota_vi.net1 4.34146f
+C480 x_core.net4 ua[4] 0.48912f
+C481 x_ota_vi.VSTRP_IP x_ota_vi.net9 0.01073f
+C482 VDPWR x_ota_vi.net2 4.69968f
+C483 x_ota_iv.VSTRP_IP x_pas.vi_net2 0.03472f
+C484 x_ota_vi.VBP_CASC x_ota_vi.net7 0.27354f
+C485 x_ota_vi.VBP_CASC x_ota_vi.net4 0.64592f
+C486 x_ota_vi.net7 x_ota_vi.VBP_TOP 0.06186f
+C487 x_core.iz_lin x_idac_b.out 0.81575f
+C488 x_ota_vi.VBN_CASC x_ota_vi.net7 0.88994f
+C489 x_core.ix_sq x_idac_b.out 29.0938f
+C490 x_ota_vi.VBN_CASC x_ota_vi.net4 0.93319f
+C491 x_core.iz_sq x_idac_b.out 32.073f
+C492 x_ota_vi.net8 x_ota_vi.net9 0.3269f
+C493 a_26852_42731# ui_in[1] 0.03426f
+C494 x_ota_vi.net8 x_ota_vi.net5 0.20888f
+C495 a_17900_42731# x_idac_b.out 0.25102f
+C496 x_ota_vi.VBP_CASC x_ota_vi.net3 0.86825f
+C497 a_59240_8093# VDPWR 0.0964f
+C498 VDPWR x_ota_vi.net6 0.13722f
+C499 x_ota_vi.VBP_CASC x_ota_vi.net9 3.42609f
+C500 x_core.net3 ua[4] 0.44629f
+C501 x_ota_vi.VBN_CASC x_ota_vi.net3 0.12551f
+C502 x_idac_c.net2 x_idac_c.net1 0.26046f
+C503 x_ota_vi.net9 x_ota_vi.VBP_TOP 2.3028f
+C504 x_ota_vi.VBP_CASC x_ota_vi.net5 0.65889f
+C505 x_core.net2 ua[4] 0.95004f
+C506 x_ota_vi.VBN_CASC x_ota_vi.net9 6.04432f
+C507 a_26852_40984# ua[0] 1.62794f
+C508 x_ota_vi.VBN_CASC x_ota_vi.net5 0.57848f
+C509 ua[1] x_ota_vi.net1 0.1042f
+C510 a_34260_42731# ua[0] 1.19974f
+C511 x_pas.vi_vmir ui_in[1] 0.06464f
+C512 x_pas.x1_i_v_out ua[0] 0.05558f
+C513 a_17900_40984# ua[0] 1.25448f
+C514 x_ota_iv.VBP_TOP x_pas.vi_net2 0.15249f
+C515 x_ota_vi.net3 x_ota_vi.net7 0.02782f
+C516 x_ota_vi.net3 x_ota_vi.net4 3.69367f
+C517 x_idac_c.net2 x_idac_c.net4 3.49839f
+C518 x_core.net1 ua[4] 3.6317f
+C519 x_idac_c.net2 x_idac_c.net3 3.04102f
+C520 x_aux.b3 x_idac_b.out 0.09165f
+C521 x_ota_vi.net9 x_ota_vi.net7 4.93703f
+C522 x_ota_vi.MN_TAIL_BIAS a_54350_31747# 0.05801f
+C523 uio_out[7] uio_out[6] 0.03102f
+C524 x_ota_vi.net5 x_ota_vi.net7 0.09176f
+C525 x_ota_vi.net5 x_ota_vi.net4 2.04727f
+C526 x_idac_b.net1 ui_in[4] 0.08773f
+C527 x_idac_c.net2 x_idac_c.net5 6.56539f
+C528 x_idac_b.net4 ui_in[4] 0.08798f
+C529 x_idac_b.net6 x_idac_b.out 10.4099f
+C530 ua[0] ua[3] 0.14438f
+C531 x_aux.v_mir_out x_idac_b.out 0.12663f
+C532 x_aux.b2 x_idac_b.out 0.06013f
+C533 x_ota_vi.net9 x_ota_vi.net3 0.122f
+C534 x_idac_b.net3 ui_in[4] 6.00418f
+C535 x_ota_iv.net7 x_pas.vi_net2 0.0324f
+C536 x_ota_vi.net5 x_ota_vi.net3 2.27738f
+C537 a_54350_31747# x_pas.vi_vmir 0.02169f
+C538 a_10492_40984# ua[0] 1.62794f
+C539 x_ota_vi.net9 x_ota_vi.net5 0.06576f
+C540 x_pas.vi_net1 x_ota_iv.net8 0.1121f
+C541 ui_in[4] x_idac_b.net5 5.90693f
+C542 a_50540_31747# x_pas.vi_vmir 0.02098f
+C543 x_core.net4 x_core.iz_lin 16.2036f
+C544 x_core.net4 x_core.ix_sq 1.16961f
+C545 x_idac_b.net2 ui_in[4] 0.95719f
+C546 x_core.net4 x_core.iz_sq 1.20789f
+C547 VDPWR x_ota_vi.net15 0.46938f
+C548 ua[1] a_36012_6285# 0.02424f
+C549 VDPWR x_ota_vi.VSTRP_OUT 2.64426f
+C550 uio_in[3] a_10492_40984# 0.02316f
+C551 a_34260_42731# ui_in[3] 0.05206f
+C552 ua[1] x_idac_c.out 53.0141f
+C553 x_pas.vi_net1 x_ota_iv.VBP_CASC 0.04519f
+C554 x_core.sq_out ua[0] 0.45378f
+C555 VDPWR x_ota_vi.net14 1.60407f
+C556 VDPWR x_ota_vi.EN_B 4.39747f
+C557 a_12124_32765# x_idac_c.net6 0.12797f
+C558 a_36012_9830# x_idac_a.out 0.01956f
+C559 ua[0] uio_in[1] 0.67453f
+C560 x_idac_b.net1 ui_in[5] 0.08172f
+C561 x_idac_b.net4 ui_in[5] 5.85684f
+C562 a_58656_41011# x_aux.b4 0.10301f
+C563 x_aux.b1 x_idac_b.out 0.17356f
+C564 x_core.iz_lin x_core.net3 0.82082f
+C565 x_core.ix_sq x_core.net3 1.16892f
+C566 x_core.lin_out ua[0] 0.50524f
+C567 x_core.iz_sq x_core.net3 3.2635f
+C568 x_core.ix_sq x_core.net2 3.7814f
+C569 x_core.net2 x_core.iz_sq 26.803f
+C570 VDPWR x_ota_vi.VSTRP_IP 5.0153f
+C571 x_core.iz_lin x_core.net2 0.67086f
+C572 x_idac_b.net3 ui_in[5] 5.88864f
+C573 uio_in[2] ua[0] 1.10416f
+C574 x_pas.vi_net1 x_ota_iv.VBN_CASC 0.06058f
+C575 ui_in[1] a_43212_42731# 0.05276f
+C576 ua[0] a_1540_40984# 1.21547f
+C577 x_idac_a.net6 x_idac_a.Vbranch 0.90231f
+C578 ui_in[7] uio_in[0] 0.40633f
+C579 uio_in[3] uio_in[1] 2.20621f
+C580 VDPWR x_ota_vi.net8 2.50781f
+C581 x_ota_iv.net7 x_pas.vi_net1 0.17238f
+C582 ui_in[6] ui_in[4] 2.63883f
+C583 ui_in[5] x_idac_b.net5 0.29569f
+C584 x_core.iz_lin x_core.net1 0.76902f
+C585 x_core.net6 ua[0] 0.19405f
+C586 uio_in[0] x_idac_c.out 0.29123f
+C587 x_core.iz_sq x_core.net1 14.6255f
+C588 x_ota_iv.net9 x_pas.vi_net2 0.11911f
+C589 x_core.ix_sq x_core.net1 47.9699f
+C590 x_pas.vi_net1 x_ota_iv.net4 0.12827f
+C591 x_core.net5 ua[0] 0.05311f
+C592 ui_in[5] x_idac_b.net2 0.05211f
+C593 a_55714_5103# a_55336_6913# 0.01317f
+C594 x_idac_a.out ui_in[0] 1.56425f
+C595 uio_in[2] uio_in[3] 8.34011f
+C596 x_ota_vi.VBP_CASC VDPWR 3.95452f
+C597 VDPWR x_ota_vi.VBP_TOP 8.61008f
+C598 a_24106_9830# a_23426_9830# 0.05507f
+C599 x_idac_a.net6 x_idac_b.Vbranch 0.06735f
+C600 VDPWR x_ota_vi.VBN_CASC 1.81561f
+C601 x_pas.iv_net1 x_pas.vi_net2 1.49341f
+C602 VDPWR a_50540_41011# 0.35791f
+C603 a_55714_5103# a_54958_5103# 0.29626f
+C604 VDPWR x_ota_vi.net7 10.3937f
+C605 VDPWR x_ota_vi.net4 2.11275f
+C606 a_30132_18739# ua[4] 0.0643f
+C607 x_idac_a.net6 x_idac_c.Vbranch 0.06707f
+C608 ua[5] ua[4] 10.5537f
+C609 ua[0] ui_in[1] 1.16902f
+C610 x_pas.vi_net2 ua[3] 20.234f
+C611 x_idac_c.net6 a_12124_33903# 0.04083f
+C612 ui_in[6] ui_in[5] 6.63882f
+C613 x_idac_c.net6 a_1540_33903# 0.12723f
+C614 x_idac_a.net5 x_idac_b.out 1.56989f
+C615 a_56848_6913# x_ota_vi.net15 0.32721f
+C616 VDPWR x_ota_vi.net3 3.31093f
+C617 x_pas.vi_net1 x_ota_iv.net3 0.08459f
+C618 VDPWR x_ota_vi.net9 9.36202f
+C619 VDPWR x_ota_vi.net5 13.4424f
+C620 uio_in[3] uio_in[4] 0.03154f
+C621 x_pas.vi_net1 x_ota_iv.net9 0.0126f
+C622 x_ota_vi.MN_TAIL_BIAS x_pas.vi_vmir 0.52859f
+C623 uio_in[5] uio_in[4] 0.03102f
+C624 x_idac_a.net6 x_core.iz_sq 0.02343f
+C625 VDPWR x_idac_a.out 1.89412f
+C626 x_pas.vi_net1 x_ota_iv.net5 0.18947f
+C627 x_pas.vi_net1 x_pas.x1_i_v_out 1.22369f
+C628 a_50540_31747# ua[0] 0.07977f
+C629 x_pas.vi_net1 x_pas.iv_net1 1.40733f
+C630 uio_oe[0] uio_oe[1] 0.03102f
+C631 ua[1] x_ota_vi.net5 0.32504f
+C632 x_pas.vi_net1 ua[3] 0.74279f
+C633 ui_in[3] ui_in[1] 1.18219f
+C634 x_core.iy_lin a_24106_2740# 0.29926f
+C635 a_23426_2740# x_core.iy_lin 0.02879f
+C636 ua[1] x_idac_a.out 0.41552f
+C637 x_pas.x1_i_v_out ua[4] 19.0466f
+C638 a_34260_31747# ua[0] 0.03261f
+C639 uo_out[3] uo_out[2] 0.03102f
+C640 a_24110_31747# ua[0] 0.01852f
+C641 ua[0] a_17900_31747# 0.03786f
+C642 x_core.iz_lin ua[5] 1.65053f
+C643 x_core.ix_sq ua[5] 34.2927f
+C644 x_core.iz_sq ua[5] 24.6361f
+C645 ua[4] ua[3] 0.18083f
+C646 ui_in[6] x_idac_b.out 0.82709f
+C647 x_core.iy_lin ui_in[2] 0.02767f
+C648 x_idac_c.net6 ua[0] 22.2593f
+C649 a_34260_32765# ua[0] 0.03089f
+C650 x_core.iy_lin a_24106_6285# 0.3069f
+C651 x_core.iy_lin a_23426_6285# 0.02879f
+C652 x_core.iy_lin x_idac_c.out 0.28472f
+C653 uo_out[1] uo_out[2] 0.03102f
+C654 x_core.sq_out ua[4] 0.19189f
+C655 uio_in[3] x_idac_c.net6 1.33964f
+C656 a_17900_32765# ua[0] 0.02961f
+C657 x_core.lin_out ua[4] 0.14642f
+C658 uo_out[5] uo_out[4] 0.03102f
+C659 x_pas.x1_i_v_out x_core.iz_lin 0.17052f
+C660 x_pas.x1_i_v_out x_core.ix_sq 0.08395f
+C661 x_pas.x1_i_v_out x_core.iz_sq 0.08183f
+C662 a_26852_42731# ua[0] 1.61238f
+C663 x_ota_vi.MN_TAIL_BIAS ua[0] 0.23396f
+C664 ua[2] a_24106_2740# 0.01011f
+C665 a_23426_2740# ua[2] 0.02914f
+C666 x_idac_a.net6 x_idac_a.net1 1.97492f
+C667 x_core.net6 ua[4] 0.35014f
+C668 ua[1] VDPWR 0.13976f
+C669 x_idac_a.net6 x_idac_a.net4 0.14672f
+C670 x_core.net5 ua[4] 0.2442f
+C671 uio_oe[6] uio_oe[5] 0.03102f
+C672 VDPWR a_59394_15703# 0.05276f
+C673 a_59086_15703# VDPWR 0.05238f
+C674 x_core.iz_sq ua[3] 0.8226f
+C675 x_core.iz_lin ua[3] 0.14881f
+C676 VDPWR a_58778_15703# 0.05189f
+C677 x_core.ix_sq ua[3] 0.31044f
+C678 x_core.iz_lin a_37216_22197# 0.02382f
+C679 a_34260_33903# ua[0] 0.02031f
+C680 x_core.ix_sq a_37216_22197# 0.03258f
+C681 x_idac_a.out x_aux.b4 0.34272f
+C682 ua[0] x_pas.vi_vmir 1.00529f
+C683 x_idac_c.Vbranch uio_in[1] 0.15185f
+C684 a_58470_15703# VDPWR 0.05182f
+C685 a_1540_42731# ua[0] 1.19294f
+C686 a_26852_40984# x_idac_b.net6 0.08122f
+C687 x_idac_a.net6 x_idac_a.net3 0.13757f
+C688 a_17900_33903# ua[0] 0.02031f
+C689 uio_in[2] x_idac_c.Vbranch 0.1501f
+C690 x_idac_a.net6 x_idac_a.net5 11.8491f
+C691 VDPWR a_58162_15703# 0.05182f
+C692 a_24106_6285# ua[2] 0.03028f
+C693 a_23426_6285# ua[2] 0.05885f
+C694 x_idac_a.Vbranch ui_in[1] 0.2363f
+C695 x_idac_a.net6 x_idac_a.net2 0.09587f
+C696 a_17900_40984# x_idac_b.net6 0.25806f
+C697 x_idac_c.out ua[2] 0.30013f
+C698 a_37216_24584# x_core.ix_sq 0.03241f
+C699 x_core.sq_out x_core.iz_lin 0.69752f
+C700 a_58656_41878# x_idac_a.out 0.02316f
+C701 x_core.sq_out x_core.ix_sq 2.54437f
+C702 x_core.sq_out x_core.iz_sq 40.4585f
+C703 a_26852_42731# ui_in[3] 0.03759f
+C704 a_17900_42731# uio_in[1] 0.03923f
+C705 x_core.lin_out x_core.iz_sq 0.77359f
+C706 x_core.lin_out x_core.iz_lin 23.9275f
+C707 x_core.lin_out x_core.ix_sq 0.85775f
+C708 a_24106_747# a_23426_747# 0.05507f
+C709 x_idac_b.Vbranch ui_in[1] 0.14101f
+C710 VDPWR a_59240_17761# 0.05247f
+C711 x_core.net6 x_core.iz_lin 0.2511f
+C712 ui_in[3] x_pas.vi_vmir 0.06471f
+C713 x_core.net6 x_core.ix_sq 0.15986f
+C714 x_core.net6 x_core.iz_sq 0.15577f
+C715 VDPWR a_58932_17761# 0.05219f
+C716 x_core.net5 x_core.iz_lin 0.22488f
+C717 x_core.net5 x_core.ix_sq 0.15576f
+C718 x_core.net5 x_core.iz_sq 0.14335f
+C719 x_idac_c.Vbranch ui_in[1] 0.06707f
+C720 x_core.iy_lin x_idac_a.out 26.7303f
+C721 ua[0] a_43212_42731# 1.61238f
+C722 x_idac_b.net6 uio_in[1] 0.9235f
+C723 ui_in[2] ui_in[4] 0.38074f
+C724 x_ota_vi.MN_TAIL_BIAS x_pas.vi_net2 3.5402f
+C725 x_core.iy_lin a_24106_9830# 0.30327f
+C726 ui_in[7] ui_in[4] 0.2668f
+C727 VDPWR a_58624_17761# 0.05182f
+C728 x_core.iy_lin a_23426_9830# 0.02879f
+C729 uio_in[2] x_idac_b.net6 1.35319f
+C730 VDPWR x_aux.b4 16.7527f
+C731 x_idac_c.out ui_in[4] 0.0858f
+C732 x_idac_c.out VDPWR_uq0 0.03774f
+C733 VDPWR a_58316_17761# 0.05182f
+C734 ua[0] a_40470_35041# 0.02295f
+C735 x_core.iz_lin ui_in[1] 0.05482f
+C736 x_core.iy_lin ui_in[0] 0.02935f
+C737 x_core.iz_sq ui_in[1] 0.05465f
+C738 a_34260_35041# ua[0] 0.0524f
+C739 a_50540_35703# ua[0] 0.01002f
+C740 a_57226_15703# VDPWR 0.06994f
+C741 a_61392_37419# x_pas.vi_vmir 0.08987f
+C742 x_core.ix_sq ui_in[1] 0.05465f
+C743 x_pas.vi_net2 x_pas.vi_vmir 9.87324f
+C744 VDPWR a_56470_15703# 0.01087f
+C745 a_58256_31747# x_aux.b2 0.04758f
+C746 a_24110_35041# ua[0] 0.02295f
+C747 a_60166_37419# x_pas.vi_vmir 0.0895f
+C748 VDPWR a_58656_41878# 1.36153f
+C749 VDPWR a_56092_17513# 0.01006f
+C750 a_58656_41011# x_idac_b.out 0.01093f
+C751 ui_in[5] ui_in[2] 0.25736f
+C752 a_17900_35041# ua[0] 0.0524f
+C753 ua[0] a_7750_35041# 0.02295f
+C754 a_1540_35041# ua[0] 0.03209f
+C755 VDPWR a_55714_15703# 0.01508f
+C756 x_core.iz_lin a_54350_31747# 0.02169f
+C757 ui_in[3] a_43212_42731# 0.01098f
+C758 ui_in[7] ui_in[5] 0.78929f
+C759 x_core.iz_sq a_54350_31747# 0.01295f
+C760 x_core.ix_sq a_54350_31747# 0.02071f
+C761 x_pas.vi_net1 x_ota_vi.MN_TAIL_BIAS 1.3723f
+C762 x_idac_a.out x_aux.c_net1 0.29053f
+C763 a_50540_31747# x_core.iz_lin 0.03057f
+C764 ui_in[5] x_idac_c.out 0.07989f
+C765 a_50540_31747# x_core.ix_sq 0.01686f
+C766 a_50540_31747# x_core.iz_sq 0.01223f
+C767 x_idac_b.net6 ui_in[1] 0.14234f
+C768 a_40470_31747# x_core.iz_lin 0.02408f
+C769 uio_in[3] ua[0] 2.531f
+C770 a_40470_31747# x_core.ix_sq 0.03414f
+C771 a_55336_17513# VDPWR 0.02385f
+C772 VDPWR a_54958_15703# 0.33635f
+C773 x_idac_a.out ua[2] 0.20621f
+C774 VDPWR x_core.iy_lin 2.08268f
+C775 x_pas.vi_net1 x_pas.vi_vmir 44.1031f
+C776 ua[0] a_47086_36059# 0.76078f
+C777 x_ota_vi.MN_TAIL_BIAS x_idac_a.Vbranch 0.15242f
+C778 x_idac_c.Vbranch x_idac_c.net6 0.69985f
+C779 a_34260_36059# ua[0] 0.82328f
+C780 a_30726_36059# ua[0] 0.76078f
+C781 a_1820_2740# x_idac_b.out 0.31055f
+C782 ua[0] ui_in[3] 2.48638f
+C783 x_idac_a.Vbranch x_pas.vi_vmir 0.45735f
+C784 x_idac_b.Vbranch x_ota_vi.MN_TAIL_BIAS 0.14928f
+C785 ua[1] x_core.iy_lin 1.07351f
+C786 ua[0] a_17900_36059# 0.82328f
+C787 x_ota_vi.VBN_CASC x_ota_iv.net2 0.04133f
+C788 a_44844_32765# x_core.iz_sq 0.01921f
+C789 a_14366_36059# ua[0] 0.76078f
+C790 ui_in[6] a_26852_40984# 0.01531f
+C791 x_ota_vi.MN_TAIL_BIAS a_56470_5103# 0.01092f
+C792 ui_in[2] x_idac_b.out 0.25102f
+C793 uio_out[2] uio_out[3] 0.03102f
+C794 x_idac_c.Vbranch x_ota_vi.MN_TAIL_BIAS 1.00004f
+C795 x_idac_b.Vbranch x_pas.vi_vmir 0.25032f
+C796 ui_in[7] x_idac_b.out 6.37875f
+C797 a_1820_6285# x_idac_b.out 0.3145f
+C798 x_idac_c.out x_idac_b.out 2.54042f
+C799 x_idac_a.net1 ui_in[1] 0.08172f
+C800 a_10492_42731# x_idac_c.net6 0.05583f
+C801 x_idac_a.net4 ui_in[1] 5.85684f
+C802 VDPWR a_54580_17513# 0.16241f
+C803 x_aux.b1 a_54350_31747# 0.48588f
+C804 a_1540_36059# ua[0] 0.80297f
+C805 VDPWR x_aux.c_net1 3.38396f
+C806 x_idac_c.net1 uio_in[1] 0.08172f
+C807 VDPWR a_53824_15703# 0.31007f
+C808 x_aux.b1 a_50540_31747# 0.45731f
+C809 x_idac_c.Vbranch x_pas.vi_vmir 0.22537f
+C810 x_ota_iv.net2 x_ota_vi.net5 0.01406f
+C811 VDPWR a_50540_41878# 1.44384f
+C812 uio_in[2] x_idac_c.net1 5.71128f
+C813 x_ota_vi.MN_TAIL_BIAS x_core.iz_lin 0.51517f
+C814 VDPWR ua[2] 0.36038f
+C815 a_24106_747# ua[2] 0.014f
+C816 x_ota_vi.MN_TAIL_BIAS x_core.ix_sq 0.40259f
+C817 x_ota_vi.MN_TAIL_BIAS x_core.iz_sq 0.30375f
+C818 a_28484_32765# x_idac_b.net6 0.12797f
+C819 x_idac_c.net4 uio_in[1] 5.85684f
+C820 x_idac_c.out a_24106_16833# 0.01046f
+C821 a_57226_5103# x_ota_vi.MN_TAIL_BIAS 0.01278f
+C822 x_idac_a.net3 ui_in[1] 5.88864f
+C823 x_idac_c.net3 uio_in[1] 5.88864f
+C824 ui_in[0] ui_in[4] 0.02199f
+C825 a_23426_16833# x_idac_c.out 0.0126f
+C826 x_idac_a.net5 ui_in[1] 0.29569f
+C827 a_57226_15703# a_56470_15703# 0.29626f
+C828 a_57226_15703# a_56848_17513# 0.01317f
+C829 x_idac_a.net2 ui_in[1] 0.05211f
+C830 uio_in[2] x_idac_c.net4 5.73767f
+C831 x_idac_c.net5 uio_in[1] 0.29569f
+C832 uio_in[2] x_idac_c.net3 0.04622f
+C833 a_47086_37446# ua[0] 0.75838f
+C834 x_core.iz_lin x_pas.vi_vmir 1.68867f
+C835 VDPWR a_55714_5103# 0.01508f
+C836 VDPWR a_59394_5103# 0.05276f
+C837 x_core.iz_sq x_pas.vi_vmir 5.86303f
+C838 x_core.ix_sq x_pas.vi_vmir 0.18164f
+C839 uio_in[2] x_idac_c.net5 0.29442f
+C840 a_56470_15703# a_56848_17513# 0.01317f
+C841 a_36012_2740# x_core.net1 0.02857f
+C842 x_ota_vi.MN_TAIL_BIAS x_aux.b3 0.28239f
+C843 ua[1] ua[2] 1.08162f
+C844 a_56092_17513# a_56848_17513# 0.29626f
+C845 a_56092_17513# a_56470_15703# 0.01317f
+C846 x_core.net1 a_24106_2740# 0.02114f
+C847 a_23426_2740# x_core.net1 0.02857f
+C848 x_core.net4 x_idac_c.out 0.1088f
+C849 a_26852_42731# x_idac_b.net6 0.05583f
+C850 a_34260_37446# ua[0] 0.82261f
+C851 x_aux.v_mir_out x_ota_vi.MN_TAIL_BIAS 0.10939f
+C852 x_ota_vi.MN_TAIL_BIAS x_aux.b2 5.35285f
+C853 a_56470_15703# a_55714_15703# 0.29626f
+C854 a_36012_13375# x_idac_a.out 0.02042f
+C855 x_aux.b3 x_pas.vi_vmir 0.06695f
+C856 ui_in[5] ui_in[0] 0.10323f
+C857 x_core.iy_lin x_aux.b4 10.0232f
+C858 a_56092_17513# a_55714_15703# 0.01317f
+C859 x_idac_a.net5 a_40470_31747# 0.08611f
+C860 a_30726_37446# ua[0] 0.75838f
+C861 a_58656_34725# x_idac_c.Vbranch 0.01309f
+C862 VDPWR x_ota_iv.net12 0.06832f
+C863 x_idac_b.Vbranch a_57086_35703# 0.01167f
+C864 ua[0] ua[4] 0.11002f
+C865 x_idac_a.Vbranch ua[0] 28.966f
+C866 x_aux.b2 x_pas.vi_vmir 0.19866f
+C867 x_idac_c.out x_core.net3 0.10734f
+C868 x_aux.v_mir_out x_pas.vi_vmir 5.68589f
+C869 uio_in[0] x_idac_c.net2 0.95719f
+C870 x_idac_c.out x_core.net2 0.10704f
+C871 a_28484_33903# x_idac_b.net6 0.04083f
+C872 a_17900_37446# ua[0] 0.82261f
+C873 a_17900_33903# x_idac_b.net6 0.12723f
+C874 a_36012_6285# x_core.net1 0.02857f
+C875 a_55336_17513# a_56092_17513# 0.29626f
+C876 a_24106_6285# x_core.net1 0.02114f
+C877 a_23426_6285# x_core.net1 0.02857f
+C878 x_idac_c.out x_core.net1 0.11882f
+C879 ui_in[6] ui_in[1] 0.13524f
+C880 x_idac_c.Vbranch a_57086_35703# 0.04655f
+C881 x_aux.b1 x_ota_vi.MN_TAIL_BIAS 10.56f
+C882 a_55714_15703# a_54958_15703# 0.29626f
+C883 a_55336_17513# a_55714_15703# 0.01317f
+C884 a_14366_37446# ua[0] 0.75838f
+C885 a_23426_747# ua[2] 0.02955f
+C886 x_idac_b.Vbranch ua[0] 29.8847f
+C887 VDPWR x_ota_iv.net2 4.77201f
+C888 VDPWR x_ota_iv.net1 4.76074f
+C889 ui_in[2] a_43212_40984# 0.04854f
+C890 x_idac_a.Vbranch a_47086_36059# 0.05266f
+C891 x_idac_a.out x_idac_b.out 6.48675f
+C892 a_44844_32765# x_idac_a.net5 0.0958f
+C893 ua[0] a_1540_37446# 0.8023f
+C894 x_aux.b1 x_pas.vi_vmir 0.26801f
+C895 a_55336_17513# a_54958_15703# 0.01317f
+C896 a_24110_31747# x_idac_b.net5 0.08611f
+C897 x_idac_c.Vbranch ua[0] 30.2804f
+C898 VDPWR a_58778_5103# 0.05189f
+C899 x_aux.c_net1 x_aux.b4 0.09582f
+C900 a_60166_37419# a_59666_37419# 0.01344f
+C901 a_61124_36681# x_idac_c.Vbranch 0.01964f
+C902 x_idac_a.Vbranch ui_in[3] 0.17085f
+C903 a_58656_34725# x_aux.b3 0.09297f
+C904 VDPWR a_58656_40144# 0.34471f
+C905 ui_in[0] x_idac_b.out 0.23579f
+C906 ua[1] x_ota_iv.net1 0.10507f
+C907 x_idac_c.Vbranch uio_in[3] 0.15517f
+C908 x_idac_a.net6 ui_in[2] 3.70525f
+C909 a_1820_9830# x_idac_b.out 0.30788f
+C910 x_pas.vi_net1 a_61392_37419# 0.03107f
+C911 a_36012_2740# ua[5] 0.0582f
+C912 x_core.ix_sq ua[0] 0.44304f
+C913 x_core.iz_sq ua[0] 1.08278f
+C914 x_core.iz_lin ua[0] 4.23238f
+C915 x_pas.vi_net1 x_pas.vi_net2 11.9033f
+C916 a_28484_32765# x_idac_b.net5 0.0958f
+C917 x_idac_b.Vbranch a_30726_36059# 0.05266f
+C918 x_idac_b.Vbranch ui_in[3] 0.14101f
+C919 x_idac_c.net1 x_idac_c.net6 1.97492f
+C920 a_17900_42731# ua[0] 1.20417f
+C921 x_aux.b3 a_57086_35703# 0.0648f
+C922 x_idac_c.Vbranch a_47086_36059# 0.01009f
+C923 x_idac_a.net6 x_idac_c.out 0.02789f
+C924 a_23426_2740# ua[5] 0.05801f
+C925 a_7750_31747# x_idac_c.net5 0.08611f
+C926 x_idac_c.Vbranch a_34260_36059# 0.01025f
+C927 x_idac_a.net5 a_44844_33903# 0.05683f
+C928 x_idac_c.net4 x_idac_c.net6 0.14672f
+C929 a_61392_37419# x_idac_a.Vbranch 0.01823f
+C930 a_10492_42731# ua[0] 1.61238f
+C931 x_idac_c.net3 x_idac_c.net6 0.13757f
+C932 a_30726_36059# x_idac_c.Vbranch 0.01009f
+C933 x_idac_a.Vbranch x_pas.vi_net2 0.21095f
+C934 a_17900_42731# uio_in[3] 0.02774f
+C935 x_idac_c.Vbranch ui_in[3] 0.06707f
+C936 ui_in[2] a_34260_40984# 0.04745f
+C937 x_core.net4 x_idac_a.out 2.70495f
+C938 x_idac_a.net5 x_pas.vi_vmir 0.2141f
+C939 a_55336_17513# a_54580_17513# 0.29626f
+C940 x_aux.b3 ua[0] 0.05876f
+C941 a_54580_17513# a_54958_15703# 0.01317f
+C942 x_idac_c.net6 x_idac_c.net5 11.8491f
+C943 a_60166_37419# x_idac_a.Vbranch 0.0215f
+C944 x_idac_c.Vbranch a_17900_36059# 0.01025f
+C945 VDPWR a_59240_18693# 0.0964f
+C946 x_core.iy_lin x_aux.c_net1 0.10353f
+C947 x_idac_b.net6 ua[0] 22.4179f
+C948 x_idac_c.Vbranch a_14366_36059# 0.05266f
+C949 VDPWR x_idac_b.out 1.96199f
+C950 x_idac_b.Vbranch a_61392_37419# 0.0118f
+C951 a_36012_6285# ua[5] 0.05851f
+C952 x_idac_c.out a_30132_18739# 0.02857f
+C953 VDPWR x_ota_iv.net6 0.14862f
+C954 a_23426_6285# ua[5] 0.05818f
+C955 x_idac_c.out a_28838_18739# 0.06373f
+C956 x_idac_a.out x_core.net3 23.5348f
+C957 x_idac_a.out x_core.net2 0.68349f
+C958 x_idac_b.Vbranch x_pas.vi_net2 0.13908f
+C959 x_idac_c.out ua[5] 0.14891f
+C960 x_core.ix_sq ui_in[3] 0.05465f
+C961 x_core.iz_sq ui_in[3] 0.05465f
+C962 x_aux.v_mir_out a_61124_36681# 0.04546f
+C963 x_core.iz_lin ui_in[3] 0.05494f
+C964 a_47086_37446# x_idac_a.Vbranch 0.0752f
+C965 x_core.iy_lin ua[2] 1.33043f
+C966 a_12124_32765# x_idac_c.net5 0.0958f
+C967 VDPWR a_58470_5103# 0.05182f
+C968 uio_in[3] x_idac_b.net6 0.56779f
+C969 x_idac_b.Vbranch a_60166_37419# 0.01533f
+C970 x_idac_a.out x_core.net1 0.78075f
+C971 x_idac_c.out a_28338_18739# 0.42011f
+C972 a_28484_33903# x_idac_b.net5 0.05683f
+C973 x_idac_c.Vbranch x_pas.vi_net2 0.09971f
+C974 ua[3] x_ota_vi.net2 3.58972f
+C975 a_36012_2740# ua[3] 0.01613f
+C976 ua[1] x_idac_b.out 0.398f
+C977 x_ota_vi.net1 ua[3] 12.3967f
+C978 x_pas.vi_net1 x_idac_a.Vbranch 0.28672f
+C979 a_1640_18739# x_idac_c.out 0.34058f
+C980 x_idac_b.Vbranch a_47086_37446# 0.01422f
+C981 ua[0] a_50540_38797# 0.0125f
+C982 uio_out[1] uio_out[0] 0.03102f
+C983 x_aux.b1 ua[0] 0.08115f
+C984 a_26852_40984# ui_in[2] 0.05076f
+C985 x_idac_b.net6 ui_in[3] 0.75033f
+C986 x_ota_vi.net6 ua[3] 3.22026f
+C987 x_core.iz_lin x_pas.vi_net2 2.22726f
+C988 x_core.ix_sq x_pas.vi_net2 2.22233f
+C989 x_pas.vi_net2 x_core.iz_sq 0.09844f
+C990 uio_in[0] x_idac_b.out 0.12311f
+C991 x_idac_b.Vbranch x_pas.vi_net1 0.23166f
+C992 ui_in[7] a_26852_40984# 0.02316f
+C993 x_idac_b.Vbranch a_34260_37446# 0.01422f
+C994 uio_oe[0] uio_out[7] 0.03102f
+C995 x_pas.x1_i_v_out x_idac_c.out 3.21911f
+C996 x_idac_a.net1 ua[0] 5.27518f
+C997 a_58656_40144# x_aux.b4 0.04546f
+C998 x_idac_a.net4 ua[0] 3.00308f
+C999 x_idac_a.net5 a_40470_35041# 0.1035f
+C1000 a_30726_37446# x_idac_b.Vbranch 0.07095f
+C1001 x_pas.vi_net1 x_idac_c.Vbranch 0.13041f
+C1002 x_idac_c.net5 a_12124_33903# 0.05683f
+C1003 x_idac_b.Vbranch x_idac_a.Vbranch 9.07808f
+C1004 x_idac_a.net6 x_idac_a.out 10.5566f
+C1005 x_idac_c.out ua[3] 0.08753f
+C1006 x_aux.b3 x_pas.vi_net2 0.03765f
+C1007 a_53824_15703# a_53446_17383# 0.01451f
+C1008 x_ota_vi.MN_TAIL_BIAS a_55336_6913# 0.01272f
+C1009 x_aux.v_mir_out a_61392_37419# 0.0115f
+C1010 a_30726_37446# x_idac_c.Vbranch 0.0124f
+C1011 ua[1] x_core.net4 0.83421f
+C1012 x_idac_a.net3 ua[0] 1.8767f
+C1013 a_53824_15703# a_53068_15703# 0.29626f
+C1014 x_aux.v_mir_out x_pas.vi_net2 0.15583f
+C1015 x_aux.b2 x_pas.vi_net2 0.11958f
+C1016 x_pas.vi_net1 a_62562_38797# 0.01093f
+C1017 x_idac_a.net1 a_47086_36059# 0.14906f
+C1018 x_idac_c.Vbranch x_idac_a.Vbranch 13.9806f
+C1019 x_idac_a.net5 ua[0] 6.37972f
+C1020 x_idac_a.net2 ua[0] 0.9259f
+C1021 x_pas.vi_net1 x_core.iz_lin 0.1308f
+C1022 x_pas.vi_net1 x_core.iz_sq 0.10014f
+C1023 a_17900_37446# x_idac_c.Vbranch 0.01259f
+C1024 x_pas.vi_net1 x_core.ix_sq 5.67405f
+C1025 x_idac_a.net6 ui_in[0] 2.69697f
+C1026 x_ota_vi.MN_TAIL_BIAS a_54958_5103# 0.04646f
+C1027 a_37216_24584# x_idac_c.out 0.36217f
+C1028 x_idac_b.net1 ua[0] 5.27518f
+C1029 x_ota_iv.net15 VDPWR 0.46938f
+C1030 x_idac_b.net4 ua[0] 3.00308f
+C1031 x_idac_c.out a_19678_24584# 0.41451f
+C1032 a_53068_15703# a_53446_17383# 0.01451f
+C1033 a_19178_24584# x_idac_c.out 0.41451f
+C1034 ua[1] x_core.net3 0.22365f
+C1035 a_1640_24584# x_idac_c.out 0.33353f
+C1036 ua[1] x_core.net2 0.25468f
+C1037 x_idac_a.net1 ui_in[3] 5.59182f
+C1038 x_core.sq_out x_idac_c.out 18.2618f
+C1039 x_idac_c.out uio_in[1] 0.20764f
+C1040 x_idac_a.net4 ui_in[3] 0.05056f
+C1041 x_idac_b.net3 ua[0] 1.87652f
+C1042 a_24110_35041# x_idac_b.net5 0.1035f
+C1043 a_36012_9830# ua[5] 0.05999f
+C1044 a_14366_37446# x_idac_c.Vbranch 0.07258f
+C1045 VDPWR x_ota_iv.VSTRP_OUT 2.64426f
+C1046 x_idac_b.Vbranch x_idac_c.Vbranch 14.8925f
+C1047 x_aux.b4 x_idac_b.out 4.72654f
+C1048 a_56092_6913# a_56470_5103# 0.01317f
+C1049 x_idac_a.out ua[5] 11.2201f
+C1050 x_idac_a.Vbranch x_core.ix_sq 0.18569f
+C1051 x_core.lin_out x_idac_c.out 27.6025f
+C1052 x_idac_a.Vbranch x_core.iz_sq 0.18314f
+C1053 x_core.iz_lin ua[4] 0.32444f
+C1054 x_core.iz_lin x_idac_a.Vbranch 0.18705f
+C1055 x_core.ix_sq ua[4] 0.8577f
+C1056 x_core.iz_sq ua[4] 0.90097f
+C1057 VDPWR x_ota_iv.EN_B 4.39747f
+C1058 ua[0] x_idac_b.net5 6.04286f
+C1059 x_ota_iv.net14 VDPWR 1.60407f
+C1060 x_core.iy_lin a_58656_40144# 0.0575f
+C1061 ua[1] x_core.net1 0.39356f
+C1062 uio_in[2] x_idac_c.out 0.2606f
+C1063 x_pas.vi_net1 x_aux.b3 0.08526f
+C1064 x_idac_a.net5 a_47086_36059# 0.03519f
+C1065 x_ota_iv.VSTRP_IP VDPWR 5.0153f
+C1066 x_ota_vi.net8 ua[3] 0.16448f
+C1067 x_idac_b.net2 ua[0] 0.9259f
+C1068 x_idac_c.net1 ua[0] 5.27339f
+C1069 x_aux.b1 x_pas.vi_net2 0.04918f
+C1070 a_24106_13375# x_core.iy_lin 0.30624f
+C1071 x_core.iy_lin a_23426_13375# 0.02879f
+C1072 a_54580_6913# x_ota_vi.MN_TAIL_BIAS 0.04483f
+C1073 x_core.net6 x_idac_c.out 0.56137f
+C1074 a_23426_9830# ua[5] 0.05965f
+C1075 x_idac_a.net3 ui_in[3] 0.05019f
+C1076 a_52690_17383# a_53446_17383# 0.29626f
+C1077 x_core.net5 x_idac_c.out 32.3076f
+C1078 x_pas.vi_net1 x_aux.b2 0.21897f
+C1079 VDPWR x_ota_iv.net8 2.52272f
+C1080 x_aux.v_mir_out x_pas.vi_net1 0.19981f
+C1081 uio_out[2] uio_out[1] 0.03102f
+C1082 x_ota_vi.VBP_CASC ua[3] 0.17659f
+C1083 x_idac_b.Vbranch x_core.iz_sq 0.11797f
+C1084 x_idac_b.Vbranch x_core.iz_lin 0.12121f
+C1085 x_idac_a.net5 ui_in[3] 0.29857f
+C1086 x_idac_b.Vbranch x_core.ix_sq 0.12198f
+C1087 x_idac_a.net2 ui_in[3] 0.05513f
+C1088 a_53068_15703# a_52690_17383# 0.01451f
+C1089 x_idac_c.net4 ua[0] 2.99995f
+C1090 x_ota_vi.VBN_CASC ua[3] 0.67615f
+C1091 x_idac_c.net3 ua[0] 1.87096f
+C1092 a_52312_15703# a_53068_15703# 0.29626f
+C1093 x_idac_c.net1 uio_in[3] 5.59182f
+C1094 x_idac_a.Vbranch x_aux.b3 6.53369f
+C1095 x_idac_c.net5 ua[0] 4.46546f
+C1096 a_30726_36059# x_idac_b.net1 0.14906f
+C1097 x_idac_c.net5 a_7750_35041# 0.1035f
+C1098 x_idac_c.net2 VDPWR_uq0 0.01078f
+C1099 ui_in[2] ui_in[1] 6.7388f
+C1100 x_ota_vi.net7 ua[3] 10.6061f
+C1101 a_57226_5103# a_56470_5103# 0.29626f
+C1102 x_ota_iv.VBP_CASC VDPWR 3.97027f
+C1103 x_idac_c.Vbranch x_core.iz_lin 0.11021f
+C1104 x_aux.v_mir_out x_idac_a.Vbranch 0.26269f
+C1105 x_idac_c.Vbranch x_core.ix_sq 0.09982f
+C1106 x_idac_c.Vbranch x_core.iz_sq 0.10717f
+C1107 x_ota_vi.net4 ua[3] 0.75975f
+C1108 ui_in[6] ua[0] 0.71205f
+C1109 uio_in[3] x_idac_c.net4 0.05056f
+C1110 x_aux.b2 x_idac_a.Vbranch 0.18158f
+C1111 x_ota_vi.MN_TAIL_BIAS a_53824_5103# 0.20816f
+C1112 VDPWR x_ota_iv.VBP_TOP 8.61061f
+C1113 VDPWR a_58162_5103# 0.05182f
+C1114 ui_in[7] ui_in[1] 0.16499f
+C1115 uio_in[3] x_idac_c.net3 0.05019f
+C1116 a_30726_36059# x_idac_b.net5 0.03519f
+C1117 x_idac_b.Vbranch x_aux.b3 10.6653f
+C1118 x_ota_vi.net3 ua[3] 2.76873f
+C1119 a_34260_42731# x_idac_a.out 0.25102f
+C1120 x_pas.x1_i_v_out x_idac_a.out 0.08834f
+C1121 a_52312_15703# a_52690_17383# 0.01451f
+C1122 uio_in[3] x_idac_c.net5 0.29857f
+C1123 VDPWR x_ota_iv.VBN_CASC 1.822f
+C1124 x_ota_vi.net9 ua[3] 0.12426f
+C1125 uio_oe[1] uio_oe[2] 0.03102f
+C1126 a_53446_6783# x_ota_vi.MN_TAIL_BIAS 0.07907f
+C1127 uio_in[6] uio_in[7] 0.03102f
+C1128 x_ota_vi.MN_TAIL_BIAS a_53068_5103# 0.04985f
+C1129 x_pas.vi_net1 x_aux.b1 0.05938f
+C1130 x_core.iy_lin x_idac_b.out 7.13879f
+C1131 a_52690_17383# a_51934_17383# 0.29626f
+C1132 x_idac_a.net1 a_47086_37446# 0.15025f
+C1133 x_ota_vi.net5 ua[3] 1.76115f
+C1134 x_idac_b.Vbranch x_idac_b.net6 0.89989f
+C1135 uo_out[6] uo_out[5] 0.03102f
+C1136 x_ota_iv.net7 VDPWR 10.4356f
+C1137 a_52312_15703# a_51934_17383# 0.01451f
+C1138 a_62562_38797# x_core.iz_lin 0.0449f
+C1139 x_aux.v_mir_out x_idac_b.Vbranch 1.40662f
+C1140 VDPWR x_ota_iv.net4 2.14435f
+C1141 x_idac_b.Vbranch x_aux.b2 0.15084f
+C1142 x_core.iz_lin x_core.iz_sq 6.87319f
+C1143 a_52312_15703# a_51556_15703# 0.29626f
+C1144 x_core.iz_lin x_core.ix_sq 7.62873f
+C1145 x_core.ix_sq x_core.iz_sq 40.826f
+C1146 x_idac_c.Vbranch x_aux.b3 1.52954f
+C1147 a_51556_15703# a_51934_17383# 0.01451f
+C1148 x_idac_a.out ua[3] 0.24285f
+C1149 x_core.iy_lin a_36012_16833# 0.02382f
+C1150 x_idac_c.net1 a_14366_36059# 0.14906f
+C1151 a_34260_42731# ui_in[0] 0.06057f
+C1152 x_idac_c.Vbranch x_idac_b.net6 0.08005f
+C1153 x_ota_iv.net12 a_51556_15703# 0.32707f
+C1154 x_aux.b1 x_idac_a.Vbranch 0.30842f
+C1155 a_52690_6783# x_ota_vi.MN_TAIL_BIAS 0.01484f
+C1156 x_ota_vi.MN_TAIL_BIAS a_52312_5103# 0.01484f
+C1157 x_aux.v_mir_out x_idac_c.Vbranch 0.36979f
+C1158 x_idac_c.Vbranch x_aux.b2 0.29754f
+C1159 x_core.iy_lin a_24106_16833# 0.02564f
+C1160 ui_in[6] ui_in[3] 0.06582f
+C1161 x_idac_a.net5 a_47086_37446# 0.01651f
+C1162 x_core.iz_lin x_aux.b3 0.05289f
+C1163 x_core.ix_sq x_aux.b3 2.7989f
+C1164 x_ota_vi.MN_TAIL_BIAS a_51556_5103# 0.01278f
+C1165 x_aux.b3 x_core.iz_sq 0.05773f
+C1166 a_14366_36059# x_idac_c.net5 0.03519f
+C1167 a_56016_38797# a_55516_38797# 0.01344f
+C1168 x_idac_b.Vbranch x_aux.b1 0.18852f
+C1169 x_idac_a.net1 x_idac_a.Vbranch 6.48322f
+C1170 ua[1] ua[5] 1.12918f
+C1171 x_aux.v_mir_out a_62562_38797# 0.045f
+C1172 VDPWR x_ota_iv.net3 3.44576f
+C1173 x_core.sq_out x_idac_a.out 0.70865f
+C1174 a_62562_38797# x_aux.b2 0.01311f
+C1175 x_idac_a.net4 x_idac_a.Vbranch 2.14959f
+C1176 x_aux.v_mir_out x_core.iz_lin 1.39808f
+C1177 x_aux.v_mir_out x_core.ix_sq 0.40958f
+C1178 x_core.iz_lin x_aux.b2 0.10568f
+C1179 x_aux.v_mir_out x_core.iz_sq 2.037f
+C1180 x_aux.b2 x_core.ix_sq 0.18081f
+C1181 x_aux.b2 x_core.iz_sq 0.09275f
+C1182 x_core.lin_out x_idac_a.out 16.1426f
+C1183 VDPWR x_ota_iv.net9 9.36373f
+C1184 a_57226_15703# x_ota_iv.net15 0.01323f
+C1185 x_ota_vi.MN_TAIL_BIAS x_ota_vi.net12 18.9895f
+C1186 x_aux.b2 a_56016_38797# 0.01279f
+C1187 x_aux.c_net1 x_idac_b.out 0.05374f
+C1188 x_aux.b1 x_idac_c.Vbranch 0.32536f
+C1189 x_aux.b3 a_55516_38797# 0.04526f
+C1190 x_core.iy_lin x_core.net4 20.9921f
+C1191 ui_in[5] ui_in[4] 7.11238f
+C1192 x_ota_vi.MN_TAIL_BIAS x_ota_vi.net2 0.01193f
+C1193 x_idac_b.Vbranch x_idac_a.net1 0.19701f
+C1194 x_ota_iv.net15 a_56848_17513# 0.32721f
+C1195 VDPWR x_ota_iv.net5 13.8065f
+C1196 x_core.net6 x_idac_a.out 0.14623f
+C1197 x_idac_a.net4 x_idac_b.Vbranch 0.14477f
+C1198 x_ota_iv.VSTRP_IP a_58316_17761# 0.02222f
+C1199 x_idac_a.net3 x_idac_a.Vbranch 5.7412f
+C1200 VDPWR x_pas.x1_i_v_out 22.7664f
+C1201 x_idac_a.out x_core.net5 0.1409f
+C1202 ua[2] x_idac_b.out 0.90208f
+C1203 x_idac_a.net5 x_idac_a.Vbranch 1.62018f
+C1204 x_aux.b2 a_55516_38797# 0.01279f
+C1205 x_idac_c.net6 x_idac_c.out 10.4088f
+C1206 VDPWR x_pas.iv_net1 3.46443f
+C1207 x_ota_iv.net1 x_ota_iv.net2 7.57349f
+C1208 x_idac_a.net2 x_idac_a.Vbranch 1.31828f
+C1209 x_aux.v_mir_out x_aux.b3 0.21356f
+C1210 x_aux.b2 x_aux.b3 0.28271f
+C1211 a_28484_32765# x_idac_c.out 0.01306f
+C1212 x_core.iy_lin x_core.net3 20.5984f
+C1213 a_30726_37446# x_idac_b.net1 0.15025f
+C1214 x_core.iy_lin x_core.net2 0.88266f
+C1215 x_idac_a.net1 x_idac_c.Vbranch 0.26482f
+C1216 x_aux.b1 x_core.iz_lin 0.12591f
+C1217 x_idac_a.net4 x_idac_c.Vbranch 0.2682f
+C1218 x_aux.b1 x_core.iz_sq 0.13515f
+C1219 VDPWR ua[3] 17.8567f
+C1220 x_aux.b1 x_core.ix_sq 0.11475f
+C1221 x_aux.v_mir_out x_aux.b2 0.78661f
+C1222 x_idac_b.Vbranch x_idac_a.net3 0.10436f
+C1223 ua[1] x_ota_iv.net5 0.33055f
+C1224 x_core.iy_lin x_core.net1 2.1037f
+C1225 a_17900_32765# x_idac_c.out 0.01382f
+C1226 x_idac_b.Vbranch x_idac_a.net5 0.07764f
+C1227 ua[1] x_pas.x1_i_v_out 3.34274f
+C1228 x_idac_a.net2 x_idac_b.Vbranch 0.03202f
+C1229 a_30726_37446# x_idac_b.net5 0.01651f
+C1230 ui_in[2] a_26852_42731# 0.02328f
+C1231 x_idac_a.out ui_in[1] 0.33924f
+C1232 x_idac_b.Vbranch x_idac_b.net1 6.4775f
+C1233 x_aux.b1 a_55516_38797# 0.04546f
+C1234 ui_in[7] a_26852_42731# 0.03125f
+C1235 x_idac_b.Vbranch x_idac_b.net4 2.13926f
+C1236 x_idac_c.Vbranch x_idac_a.net3 0.23483f
+C1237 x_aux.b1 x_aux.b3 3.77987f
+C1238 a_51178_17383# a_51934_17383# 0.29626f
+C1239 x_idac_a.net5 x_idac_c.Vbranch 0.12845f
+C1240 ua[1] ua[3] 2.62423f
+C1241 x_idac_b.Vbranch x_idac_b.net3 5.70043f
+C1242 a_51178_17383# a_51556_15703# 0.01451f
+C1243 ua[1] a_37216_22197# 1.77255f
+C1244 ui_in[2] x_pas.vi_vmir 0.06481f
+C1245 a_51178_17383# x_ota_iv.net12 0.01488f
+C1246 ua[1] a_19678_22197# 1.80507f
+C1247 ui_in[0] ui_in[1] 8.8498f
+C1248 x_idac_b.Vbranch x_idac_b.net5 1.61866f
+C1249 ua[1] a_19178_22197# 1.80171f
+C1250 x_idac_b.net1 x_idac_c.Vbranch 0.33831f
+C1251 x_aux.b1 x_aux.b2 4.80459f
+C1252 x_aux.v_mir_out x_aux.b1 0.28221f
+C1253 x_idac_b.net4 x_idac_c.Vbranch 0.32106f
+C1254 a_34260_33903# x_idac_c.out 0.01204f
+C1255 ui_in[4] x_idac_b.out 1.14351f
+C1256 ua[1] a_1640_22197# 1.55295f
+C1257 x_core.net4 ua[2] 0.14502f
+C1258 VDPWR_uq0 x_idac_b.out 0.04883f
+C1259 a_14366_37446# x_idac_c.net1 0.15025f
+C1260 x_ota_vi.MN_TAIL_BIAS x_ota_vi.net15 0.21057f
+C1261 x_idac_b.Vbranch x_idac_b.net2 1.31311f
+C1262 x_idac_b.net3 x_idac_c.Vbranch 0.26488f
+C1263 x_ota_vi.VSTRP_OUT x_ota_vi.MN_TAIL_BIAS 0.2215f
+C1264 ua[1] a_37216_24584# 1.77184f
+C1265 a_1540_42731# x_idac_c.out 0.25102f
+C1266 x_idac_a.net5 x_core.iz_lin 0.10372f
+C1267 a_28484_33903# x_idac_c.out 0.01194f
+C1268 ua[1] a_19678_24584# 1.801f
+C1269 x_idac_a.net5 x_core.iz_sq 0.97309f
+C1270 a_17900_33903# x_idac_c.out 0.01984f
+C1271 x_ota_vi.MN_TAIL_BIAS x_ota_vi.EN_B 0.30625f
+C1272 x_idac_a.net5 x_core.ix_sq 0.59837f
+C1273 a_24106_13375# a_23426_13375# 0.05507f
+C1274 x_idac_c.Vbranch x_idac_b.net5 0.15827f
+C1275 ua[1] a_19178_24584# 1.801f
+C1276 ua[1] a_1640_24584# 1.5531f
+C1277 ua[1] x_core.sq_out 88.6191f
+C1278 x_idac_c.Vbranch x_idac_c.net1 6.48022f
+C1279 x_idac_c.Vbranch x_idac_b.net2 0.02347f
+C1280 x_core.net3 ua[2] 0.17663f
+C1281 x_ota_vi.VSTRP_IP x_ota_vi.MN_TAIL_BIAS 1.57634f
+C1282 x_core.net2 ua[2] 0.14872f
+C1283 a_14366_37446# x_idac_c.net5 0.01651f
+C1284 x_core.lin_out ua[1] 90.356f
+C1285 x_ota_iv.net6 x_ota_iv.net2 1.33724f
+C1286 ua[1] a_7280_26971# 0.95937f
+C1287 x_ota_iv.net6 x_ota_iv.net1 4.12887f
+C1288 x_idac_c.Vbranch x_idac_c.net4 2.14383f
+C1289 x_idac_b.Vbranch ui_in[6] 0.21004f
+C1290 x_core.net1 ua[2] 0.35576f
+C1291 x_idac_c.Vbranch x_idac_c.net3 5.70664f
+C1292 ui_in[5] x_idac_b.out 0.19771f
+C1293 ua[1] a_1640_26971# 0.84444f
+C1294 ua[1] x_core.net6 3.20698f
+C1295 uio_in[0] uio_in[1] 8.71387f
+C1296 ua[1] x_core.net5 8.85038f
+C1297 x_idac_c.Vbranch x_idac_c.net5 1.61976f
+C1298 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBP_TOP 20.4644f
+C1299 x_ota_vi.MN_TAIL_BIAS x_ota_vi.VBN_CASC 0.01755f
+C1300 ui_in[6] x_idac_c.Vbranch 0.06735f
+C1301 uio_in[0] uio_in[2] 0.21346f
+C1302 uo_out[0] uio_in[7] 0.03102f
+C1303 x_idac_b.net4 x_idac_b.net6 0.14672f
+C1304 x_idac_b.net1 x_idac_b.net6 1.97492f
+C1305 x_ota_vi.MN_TAIL_BIAS x_ota_vi.net7 0.06841f
+C1306 a_1820_13375# x_idac_b.out 0.31149f
+C1307 x_core.iy_lin ua[5] 17.3599f
+C1308 x_idac_b.net3 x_idac_b.net6 0.13757f
+C1309 x_idac_b.net6 x_idac_b.net5 11.8491f
+C1310 x_ota_vi.MN_TAIL_BIAS x_ota_vi.net9 0.16986f
+C1311 x_idac_b.net2 x_idac_b.net6 0.09587f
+C1312 x_idac_a.net4 x_idac_a.net1 11.0891f
+C1313 a_56092_6913# a_55336_6913# 0.29626f
+C1314 x_ota_vi.MN_TAIL_BIAS x_idac_a.out 0.15925f
+C1315 ui_in[2] ua[0] 1.27433f
+C1316 ui_in[7] ua[0] 2.26291f
+C1317 x_idac_a.net1 x_idac_a.net3 0.36581f
+C1318 x_idac_a.net4 x_idac_a.net3 4.9134f
+C1319 x_idac_c.out ua[0] 4.03576f
+C1320 x_idac_a.net1 x_idac_a.net5 1.65406f
+C1321 x_ota_iv.VBP_TOP a_53446_17383# 0.02047f
+C1322 x_idac_a.out x_pas.vi_vmir 0.95473f
+C1323 x_idac_a.net2 x_idac_a.net1 0.26046f
+C1324 x_idac_a.net4 x_idac_a.net5 1.03438f
+C1325 ui_in[6] x_idac_b.net6 2.4241f
+C1326 x_ota_iv.VBP_TOP a_53068_15703# 0.06155f
+C1327 x_core.iy_lin x_pas.x1_i_v_out 0.36908f
+C1328 x_idac_a.net2 x_idac_a.net4 3.49839f
+C1329 uio_in[3] x_idac_c.out 6.3717f
+C1330 a_30132_18739# ua[2] 0.0195f
+C1331 x_core.iy_lin ua[3] 0.51729f
+C1332 a_58256_31747# x_aux.b4 0.04471f
+C1333 ua[5] ua[2] 1.49266f
+C1334 ui_in[0] x_pas.vi_vmir 0.07027f
+C1335 x_idac_a.net5 x_idac_a.net3 1.03339f
+C1336 VDPWR a_59240_7161# 0.05247f
+C1337 x_idac_a.net2 x_idac_a.net3 3.04102f
+C1338 x_ota_iv.VBP_TOP a_52690_17383# 0.15336f
+C1339 ui_in[2] ui_in[3] 6.71015f
+C1340 x_idac_a.net2 x_idac_a.net5 6.56539f
+C1341 x_ota_vi.net1 x_pas.vi_net2 3.88093f
+C1342 x_pas.vi_net2 x_ota_vi.net2 12.0845f
+C1343 a_52312_15703# x_ota_iv.VBP_TOP 0.12536f
+C1344 ui_in[7] ui_in[3] 2.51105f
+C1345 x_ota_iv.VBP_TOP a_51934_17383# 0.03457f
+C1346 x_ota_iv.VBP_TOP a_51556_15703# 0.01472f
+C1347 x_ota_iv.net12 x_ota_iv.VBP_TOP 6.13805f
+C1348 x_ota_iv.net8 x_ota_iv.net2 1.27439f
+C1349 a_23426_16833# a_24106_16833# 0.05507f
+C1350 x_core.iy_lin x_core.sq_out 1.34947f
+C1351 x_core.net4 x_idac_b.out 1.11481f
+C1352 x_ota_vi.net6 x_pas.vi_net2 3.10846f
+C1353 VDPWR x_ota_vi.MN_TAIL_BIAS 22.9409f
+C1354 x_idac_b.net1 x_idac_b.net4 11.0891f
+C1355 x_ota_iv.net1 x_ota_iv.net8 0.6262f
+C1356 x_core.lin_out x_core.iy_lin 6.75157f
+C1357 x_idac_b.net1 x_idac_b.net3 0.36581f
+C1358 x_idac_b.net4 x_idac_b.net3 4.9134f
+C1359 x_idac_a.out a_43212_42731# 0.05015f
+C1360 x_ota_iv.net7 x_ota_iv.net12 0.40655f
+C1361 x_ota_iv.VBP_CASC x_ota_iv.net2 0.56306f
+C1362 VDPWR a_58932_7161# 0.05219f
+C1363 uio_in[0] x_idac_c.net6 0.45277f
+C1364 x_idac_b.net1 x_idac_b.net5 1.65406f
+C1365 x_idac_b.net4 x_idac_b.net5 1.03438f
+C1366 VDPWR x_pas.vi_vmir 13.0606f
+C1367 x_ota_vi.VSTRP_IP a_58316_7161# 0.02222f
+C1368 rst_n clk 0.03102f
+C1369 x_core.net3 x_idac_b.out 1.1149f
+C1370 x_core.net2 x_idac_b.out 65.9294f
+C1371 x_core.iy_lin x_core.net6 0.20726f
+C1372 x_pas.vi_net1 x_ota_vi.net12 0.23962f
+C1373 x_pas.x1_i_v_out ua[2] 1.33598f
+C1374 x_ota_iv.VBP_CASC x_ota_iv.net1 0.13404f
+C1375 x_idac_b.net1 x_idac_b.net2 0.26046f
+C1376 x_pas.iv_net1 ua[2] 43.6431f
+C1377 x_idac_b.net3 x_idac_b.net5 1.03339f
+C1378 x_idac_b.net4 x_idac_b.net2 3.49839f
+C1379 x_core.iy_lin x_core.net5 0.23974f
+C1380 x_core.iy_lin a_58256_31747# 0.01106f
+C1381 x_idac_a.out a_40470_35041# 0.02274f
+C1382 x_pas.vi_net1 x_ota_vi.net2 3.62612f
+C1383 x_idac_a.out a_57086_35703# 0.01133f
+C1384 x_ota_iv.VBN_CASC x_ota_iv.net2 1.10729f
+C1385 x_pas.vi_net1 x_ota_vi.net1 0.64085f
+C1386 x_idac_b.net3 x_idac_b.net2 3.04102f
+C1387 a_50540_35703# x_idac_a.out 0.01089f
+C1388 ui_in[0] a_43212_42731# 0.0157f
+C1389 x_core.net1 x_idac_b.out 67.0032f
+C1390 x_ota_iv.net7 x_ota_iv.net2 13.1593f
+C1391 x_ota_iv.net1 x_ota_iv.VBN_CASC 0.33044f
+C1392 ua[2] ua[3] 0.18957f
+C1393 x_ota_iv.net4 x_ota_iv.net2 0.03057f
+C1394 VDPWR a_59086_5103# 0.05238f
+C1395 x_idac_b.net2 x_idac_b.net5 6.56539f
+C1396 x_ota_iv.net7 x_ota_iv.net1 11.9474f
+C1397 x_pas.vi_net1 x_ota_vi.net6 0.23146f
+C1398 ua[1] x_pas.vi_vmir 0.02561f
+C1399 x_idac_a.out ua[0] 3.14004f
+C1400 a_59240_18693# x_ota_iv.VSTRP_OUT 0.17133f
+C1401 ui_in[6] x_idac_b.net1 5.71349f
+C1402 ui_in[6] x_idac_b.net4 5.73767f
+C1403 x_core.iy_lin ui_in[1] 0.02758f
+C1404 x_ota_iv.EN_B a_59240_18693# 0.22583f
+C1405 x_ota_iv.net14 a_59240_18693# 0.03632f
+C1406 ui_in[6] x_idac_b.net3 0.04622f
+C1407 a_37216_24584# ua[2] 0.01304f
+C1408 x_idac_c.net1 x_idac_c.net3 0.36581f
+C1409 x_idac_c.net1 x_idac_c.net4 11.0891f
+C1410 uio_out[4] uio_out[5] 0.03102f
+C1411 x_core.sq_out ua[2] 1.2584f
+C1412 x_idac_c.net1 x_idac_c.net5 1.65406f
+C1413 ui_in[6] x_idac_b.net5 0.29442f
+C1414 ui_in[0] ua[0] 1.93698f
+C1415 x_idac_c.net4 x_idac_c.net3 4.9134f
+C1416 x_core.lin_out ua[2] 0.65749f
+C1417 ui_in[6] x_idac_b.net2 0.05079f
+C1418 x_ota_iv.net2 x_ota_iv.net3 0.27651f
+C1419 x_core.net4 x_core.net3 33.1575f
+C1420 x_core.net4 x_core.net2 1.12006f
+C1421 ena clk 0.03102f
+C1422 x_ota_vi.net8 x_pas.vi_net2 0.93138f
+C1423 x_ota_iv.net12 x_pas.iv_net1 0.28257f
+C1424 x_ota_iv.net6 x_ota_iv.net8 1.96582f
+C1425 x_idac_c.net2 uio_in[1] 0.05211f
+C1426 x_core.iy_lin a_54350_31747# 0.0136f
+C1427 x_idac_a.out a_47086_36059# 0.01233f
+C1428 x_idac_c.net4 x_idac_c.net5 1.03438f
+C1429 a_36012_13375# ua[5] 0.05835f
+C1430 x_idac_c.net3 x_idac_c.net5 1.03339f
+C1431 a_23426_13375# ua[5] 0.05801f
+C1432 x_ota_iv.net9 x_ota_iv.net2 0.7148f
+C1433 ui_in[2] x_idac_a.Vbranch 0.23723f
+C1434 x_ota_iv.net1 x_ota_iv.net3 0.01214f
+C1435 x_idac_a.net6 x_idac_b.out 0.09955f
+C1436 x_core.net4 x_core.net1 1.26927f
+C1437 x_idac_c.net2 uio_in[2] 0.05079f
+C1438 x_ota_vi.VBP_CASC x_pas.vi_net2 0.28345f
+C1439 x_core.net6 ua[2] 0.20259f
+C1440 x_ota_iv.net1 x_ota_iv.net9 0.11447f
+C1441 x_ota_vi.VBN_CASC x_pas.vi_net2 0.94046f
+C1442 x_pas.vi_net2 x_ota_vi.VBP_TOP 0.01688f
+C1443 x_core.net5 ua[2] 0.10239f
+C1444 x_ota_iv.net2 x_ota_iv.net5 0.27541f
+C1445 x_idac_a.out ui_in[3] 6.33669f
+C1446 uio_out[4] uio_out[3] 0.03102f
+C1447 x_idac_c.out ua[4] 0.35737f
+C1448 x_ota_iv.VBP_CASC x_ota_iv.net6 0.06823f
+C1449 x_core.net2 x_core.net3 1.12232f
+C1450 x_pas.x1_i_v_out x_ota_iv.net2 3.58972f
+C1451 x_ota_iv.net1 x_ota_iv.net5 2.49984f
+C1452 x_pas.iv_net1 x_ota_iv.net2 4.19057f
+C1453 x_ota_iv.net7 a_51178_17383# 0.04212f
+C1454 x_idac_b.Vbranch ui_in[2] 0.15371f
+C1455 x_pas.vi_net2 x_ota_vi.net7 11.1889f
+C1456 x_pas.vi_net2 x_ota_vi.net4 2.89852f
+C1457 x_pas.x1_i_v_out x_ota_iv.net1 12.3967f
+C1458 x_core.net1 x_core.net3 1.26943f
+C1459 x_ota_iv.net6 x_ota_iv.VBN_CASC 0.05256f
+C1460 x_ota_iv.net1 x_pas.iv_net1 0.47737f
+C1461 x_core.net2 x_core.net1 20.9364f
+C1462 ui_in[7] x_idac_b.Vbranch 0.21838f
+C1463 x_ota_vi.MN_TAIL_BIAS x_aux.b4 0.7337f
+C1464 x_ota_iv.net7 x_ota_iv.net6 0.46156f
+C1465 x_pas.vi_net2 x_ota_vi.net3 1.04464f
+C1466 x_idac_b.Vbranch x_idac_c.out 0.09439f
+C1467 ui_in[0] ui_in[3] 0.73371f
+C1468 x_ota_iv.net6 x_ota_iv.net4 3.39501f
+C1469 x_ota_vi.net9 x_pas.vi_net2 0.4476f
+C1470 VDPWR ua[0] 0.15864f
+C1471 a_57226_15703# x_ota_vi.MN_TAIL_BIAS 0.01278f
+C1472 x_idac_c.Vbranch ui_in[2] 0.06707f
+C1473 x_ota_vi.net5 x_pas.vi_net2 0.22539f
+C1474 x_pas.vi_net1 x_ota_vi.net8 0.70549f
+C1475 x_core.sq_out VDPWR_uq0 0.01237f
+C1476 ua[5] x_idac_b.out 20.3621f
+C1477 ui_in[7] x_idac_c.Vbranch 0.06735f
+C1478 x_aux.b4 x_pas.vi_vmir 0.49075f
+C1479 a_56470_15703# x_ota_vi.MN_TAIL_BIAS 0.01092f
+C1480 x_idac_c.Vbranch x_idac_c.out 0.23009f
+C1481 x_pas.vi_net1 x_ota_vi.VBP_CASC 0.85351f
+C1482 VDPWR a_50540_40144# 0.35777f
+C1483 x_idac_a.out x_pas.vi_net2 0.12855f
+C1484 x_pas.vi_net1 x_ota_vi.VBN_CASC 0.54291f
+C1485 ui_in[2] x_core.iz_lin 0.05487f
+C1486 a_55714_15703# x_ota_vi.MN_TAIL_BIAS 0.01513f
+C1487 ua[1] ua[0] 1.54436f
+C1488 VDPWR a_58624_7161# 0.05182f
+C1489 ui_in[2] x_core.ix_sq 0.05465f
+C1490 ui_in[2] x_core.iz_sq 0.05465f
+C1491 x_pas.vi_net1 x_ota_vi.net7 3.09723f
+C1492 a_36012_6285# x_core.iz_lin 0.02042f
+C1493 x_pas.vi_net1 x_ota_vi.net4 0.59423f
+C1494 x_ota_iv.net15 x_ota_iv.VSTRP_OUT 0.05912f
+C1495 a_58656_41878# x_pas.vi_vmir 0.33224f
+C1496 x_ota_iv.net6 x_ota_iv.net3 3.46455f
+C1497 VDPWR a_58316_7161# 0.05182f
+C1498 x_idac_c.out x_core.iz_sq 0.29682f
+C1499 x_core.iz_lin x_idac_c.out 13.7641f
+C1500 x_ota_iv.net15 x_ota_iv.EN_B 0.08633f
+C1501 x_core.ix_sq x_idac_c.out 0.34643f
+C1502 x_pas.vi_net1 x_ota_vi.net3 0.42441f
+C1503 x_pas.vi_net1 x_ota_vi.net9 0.11333f
+C1504 x_ota_iv.net15 x_ota_iv.VSTRP_IP 0.45271f
+C1505 x_ota_vi.MN_TAIL_BIAS a_54958_15703# 0.02518f
+C1506 x_ota_iv.EN_B x_ota_iv.VSTRP_OUT 0.24133f
+C1507 x_core.iy_lin x_ota_vi.MN_TAIL_BIAS 0.87717f
+C1508 x_pas.vi_net1 x_ota_vi.net5 3.09983f
+C1509 x_ota_iv.net14 x_ota_iv.VSTRP_OUT 0.8894f
+C1510 uio_in[0] ua[0] 0.74224f
+C1511 a_51178_17383# x_pas.iv_net1 0.02098f
+C1512 x_ota_iv.VSTRP_IP x_ota_iv.VSTRP_OUT 0.12024f
+C1513 x_ota_iv.net14 x_ota_iv.EN_B 0.11446f
+C1514 a_10492_42731# x_idac_c.out 0.05015f
+C1515 x_ota_iv.net6 x_ota_iv.net5 0.07806f
+C1516 ui_in[1] ui_in[4] 1.32271f
+C1517 x_pas.x1_i_v_out x_idac_b.out 0.03725f
+C1518 x_ota_iv.VSTRP_IP x_ota_iv.EN_B 0.12648f
+C1519 a_36012_13375# x_core.sq_out 0.02864f
+C1520 a_24106_13375# x_core.sq_out 0.02119f
+C1521 x_ota_iv.net14 x_ota_iv.VSTRP_IP 0.54919f
+C1522 ua[6] VGND 0.1514f
+C1523 ua[7] VGND 0.1514f
+C1524 ena VGND 0.069f
+C1525 clk VGND 0.04149f
+C1526 rst_n VGND 0.04132f
+C1527 VDPWR_uq0 VGND 25.4923f
+C1528 uio_in[4] VGND 0.04051f
+C1529 uio_in[5] VGND 0.04064f
+C1530 uio_in[6] VGND 0.04064f
+C1531 uio_in[7] VGND 0.04064f
+C1532 uo_out[0] VGND 0.04064f
+C1533 uo_out[1] VGND 0.04064f
+C1534 uo_out[2] VGND 0.04059f
+C1535 uo_out[3] VGND 0.04213f
+C1536 uo_out[4] VGND 0.04147f
+C1537 uo_out[5] VGND 0.0422f
+C1538 uo_out[6] VGND 0.04129f
+C1539 uo_out[7] VGND 0.04237f
+C1540 uio_out[0] VGND 0.04237f
+C1541 uio_out[1] VGND 0.04237f
+C1542 uio_out[2] VGND 0.04237f
+C1543 uio_out[3] VGND 0.04237f
+C1544 uio_out[4] VGND 0.04237f
+C1545 uio_out[5] VGND 0.04237f
+C1546 uio_out[6] VGND 0.04237f
+C1547 uio_out[7] VGND 0.04044f
+C1548 uio_oe[0] VGND 0.04038f
+C1549 uio_oe[1] VGND 0.04038f
+C1550 uio_oe[2] VGND 0.04038f
+C1551 uio_oe[3] VGND 0.04038f
+C1552 uio_oe[4] VGND 0.04038f
+C1553 uio_oe[5] VGND 0.04064f
+C1554 uio_oe[6] VGND 0.04064f
+C1555 uio_oe[7] VGND 0.06815f
+C1556 ua[3] VGND 14.0976f
+C1557 ua[5] VGND 0.1367p
+C1558 ua[4] VGND 10.515f
+C1559 ua[2] VGND 19.8802f
+C1560 ui_in[3] VGND 9.14175f
+C1561 ui_in[2] VGND 6.29868f
+C1562 ui_in[1] VGND 4.2582f
+C1563 ui_in[0] VGND 6.30037f
+C1564 ui_in[7] VGND 4.44782f
+C1565 ui_in[6] VGND 2.75346f
+C1566 ui_in[5] VGND 2.44401f
+C1567 ui_in[4] VGND 2.62303f
+C1568 uio_in[3] VGND 3.3597f
+C1569 uio_in[2] VGND 2.90304f
+C1570 uio_in[1] VGND 2.45128f
+C1571 uio_in[0] VGND 4.52534f
+C1572 ua[1] VGND 0.4481p
+C1573 VDPWR VGND 0.50578p
+C1574 ua[0] VGND 0.51912p
+C1575 a_36012_747# VGND 2.50071f $ **FLOATING
+C1576 a_24106_747# VGND 2.35319f $ **FLOATING
+C1577 a_23426_747# VGND 2.45211f $ **FLOATING
+C1578 a_1820_747# VGND 2.37105f $ **FLOATING
+C1579 a_59394_5103# VGND 0.07013f
+C1580 a_59086_5103# VGND 0.06378f
+C1581 a_58778_5103# VGND 0.0636f
+C1582 a_58470_5103# VGND 0.06348f
+C1583 a_58162_5103# VGND 0.06586f
+C1584 a_59240_7161# VGND 0.06569f
+C1585 a_58932_7161# VGND 0.05209f
+C1586 a_58624_7161# VGND 0.05112f
+C1587 a_58316_7161# VGND 0.0508f
+C1588 a_57226_5103# VGND 0.96236f
+C1589 a_56848_6913# VGND 0.80034f
+C1590 a_56470_5103# VGND 0.82955f
+C1591 a_56092_6913# VGND 0.80034f
+C1592 a_55714_5103# VGND 0.82955f
+C1593 a_55336_6913# VGND 0.80042f
+C1594 a_54958_5103# VGND 0.82955f
+C1595 a_54580_6913# VGND 1.07698f
+C1596 a_53824_5103# VGND 0.84074f
+C1597 a_53446_6783# VGND 1.09969f
+C1598 a_53068_5103# VGND 0.82624f
+C1599 a_52690_6783# VGND 0.80315f
+C1600 a_52312_5103# VGND 0.82624f
+C1601 a_51934_6783# VGND 0.80311f
+C1602 a_51556_5103# VGND 0.82624f
+C1603 x_ota_vi.net12 VGND 14.8817f
+C1604 x_ota_vi.net2 VGND 4.84757f
+C1605 x_ota_vi.net1 VGND 4.87613f
+C1606 a_36012_2740# VGND 2.26332f $ **FLOATING
+C1607 a_24106_2740# VGND 2.16209f $ **FLOATING
+C1608 a_23426_2740# VGND 2.21472f $ **FLOATING
+C1609 a_1820_2740# VGND 2.23754f $ **FLOATING
+C1610 a_51178_6783# VGND 1.01319f
+C1611 a_59240_8093# VGND 0.52061f
+C1612 x_ota_vi.net6 VGND 2.91111f
+C1613 a_36012_6285# VGND 2.27228f $ **FLOATING
+C1614 a_24106_6285# VGND 2.17158f $ **FLOATING
+C1615 a_23426_6285# VGND 2.22368f $ **FLOATING
+C1616 a_1820_6285# VGND 2.24703f $ **FLOATING
+C1617 x_ota_vi.net15 VGND 0.91319f
+C1618 x_ota_vi.VSTRP_OUT VGND 0.16771f
+C1619 x_ota_vi.EN_B VGND 5.36641f
+C1620 x_ota_vi.net14 VGND 0.39288f
+C1621 x_ota_vi.VSTRP_IP VGND 0.52382f
+C1622 x_ota_vi.net8 VGND 10.9502f
+C1623 x_ota_vi.VBP_CASC VGND 0.56534f
+C1624 x_ota_vi.VBP_TOP VGND 2.51209f
+C1625 x_ota_vi.VBN_CASC VGND 5.12307f
+C1626 x_ota_vi.net4 VGND 1.16403f
+C1627 x_ota_vi.net3 VGND 1.25367f
+C1628 x_ota_vi.net9 VGND 1.31669f
+C1629 x_ota_vi.net5 VGND 3.83476f
+C1630 a_36012_9830# VGND 2.27228f $ **FLOATING
+C1631 a_24106_9830# VGND 2.17158f $ **FLOATING
+C1632 a_23426_9830# VGND 2.22368f $ **FLOATING
+C1633 a_1820_9830# VGND 2.24703f $ **FLOATING
+C1634 a_59394_15703# VGND 0.07013f
+C1635 a_59086_15703# VGND 0.06378f
+C1636 a_58778_15703# VGND 0.0636f
+C1637 a_58470_15703# VGND 0.06348f
+C1638 a_58162_15703# VGND 0.06586f
+C1639 a_59240_17761# VGND 0.06569f
+C1640 a_58932_17761# VGND 0.05209f
+C1641 a_58624_17761# VGND 0.05112f
+C1642 a_58316_17761# VGND 0.0508f
+C1643 a_57226_15703# VGND 0.96236f
+C1644 a_56848_17513# VGND 0.80034f
+C1645 a_56470_15703# VGND 0.82955f
+C1646 a_56092_17513# VGND 0.80034f
+C1647 a_55714_15703# VGND 0.82955f
+C1648 a_55336_17513# VGND 0.80042f
+C1649 a_54958_15703# VGND 0.82955f
+C1650 a_54580_17513# VGND 1.07698f
+C1651 a_53824_15703# VGND 0.84074f
+C1652 a_53446_17383# VGND 1.09969f
+C1653 a_53068_15703# VGND 0.82624f
+C1654 a_52690_17383# VGND 0.80315f
+C1655 a_52312_15703# VGND 0.82624f
+C1656 a_51934_17383# VGND 0.80311f
+C1657 a_51556_15703# VGND 0.82624f
+C1658 x_ota_iv.net12 VGND 14.8817f
+C1659 x_ota_iv.net2 VGND 4.72024f
+C1660 x_ota_iv.net1 VGND 4.74325f
+C1661 a_36012_13375# VGND 2.27228f $ **FLOATING
+C1662 a_24106_13375# VGND 2.17158f $ **FLOATING
+C1663 a_23426_13375# VGND 2.22368f $ **FLOATING
+C1664 a_1820_13375# VGND 2.24703f $ **FLOATING
+C1665 a_51178_17383# VGND 1.01319f
+C1666 a_59240_18693# VGND 0.52061f
+C1667 x_ota_iv.net6 VGND 2.90781f
+C1668 a_36012_16833# VGND 2.5097f $ **FLOATING
+C1669 a_24106_16833# VGND 2.3523f $ **FLOATING
+C1670 a_23426_16833# VGND 2.44909f $ **FLOATING
+C1671 a_1820_16833# VGND 2.38069f $ **FLOATING
+C1672 x_core.net4 VGND 13.9078f
+C1673 x_core.net3 VGND 13.4069f
+C1674 x_core.net2 VGND 16.877f
+C1675 x_core.net1 VGND 22.5464f
+C1676 x_ota_iv.net15 VGND 0.91319f
+C1677 x_ota_iv.VSTRP_OUT VGND 0.16771f
+C1678 x_ota_iv.EN_B VGND 5.36641f
+C1679 x_ota_iv.net14 VGND 0.39288f
+C1680 x_ota_iv.VSTRP_IP VGND 0.52382f
+C1681 x_ota_iv.net8 VGND 10.9413f
+C1682 x_ota_iv.VBP_CASC VGND 0.56481f
+C1683 x_ota_iv.VBP_TOP VGND 2.51209f
+C1684 x_ota_iv.VBN_CASC VGND 5.19361f
+C1685 x_ota_iv.net4 VGND 1.16403f
+C1686 a_30132_18739# VGND 1.93704f $ **FLOATING
+C1687 a_28838_18739# VGND 1.8523f $ **FLOATING
+C1688 a_28338_18739# VGND 1.87471f $ **FLOATING
+C1689 a_1640_18739# VGND 2.00171f $ **FLOATING
+C1690 x_ota_iv.net3 VGND 1.23337f
+C1691 x_ota_iv.net9 VGND 1.36046f
+C1692 x_ota_iv.net5 VGND 3.12919f
+C1693 x_pas.x1_i_v_out VGND 16.6522f
+C1694 x_pas.iv_net1 VGND 17.0234f
+C1695 a_37216_22197# VGND 0.21444f $ **FLOATING
+C1696 a_19678_22197# VGND 0.07486f $ **FLOATING
+C1697 a_19178_22197# VGND 0.07486f $ **FLOATING
+C1698 a_1640_22197# VGND 0.45525f $ **FLOATING
+C1699 a_37216_24584# VGND 0.20621f $ **FLOATING
+C1700 a_19678_24584# VGND 0.07606f $ **FLOATING
+C1701 a_19178_24584# VGND 0.07606f $ **FLOATING
+C1702 x_core.sq_out VGND 43.6849f
+C1703 a_1640_24584# VGND 0.45061f $ **FLOATING
+C1704 x_core.lin_out VGND 38.6795f
+C1705 a_7280_26971# VGND 0.12811f $ **FLOATING
+C1706 x_core.net6 VGND 11.2407f
+C1707 a_1640_26971# VGND 0.26396f $ **FLOATING
+C1708 x_core.net5 VGND 24.2173f
+C1709 a_58256_31747# VGND 0.42246f $ **FLOATING
+C1710 a_54850_31747# VGND 0.45368f $ **FLOATING
+C1711 a_54350_31747# VGND 2.60448f $ **FLOATING
+C1712 a_50540_31747# VGND 2.63103f $ **FLOATING
+C1713 a_40470_31747# VGND 1.00487f $ **FLOATING
+C1714 a_34260_31747# VGND 1.01651f $ **FLOATING
+C1715 a_24110_31747# VGND 1.01964f $ **FLOATING
+C1716 a_17900_31747# VGND 1.0304f $ **FLOATING
+C1717 a_7750_31747# VGND 1.0245f $ **FLOATING
+C1718 a_1540_31747# VGND 1.04823f $ **FLOATING
+C1719 a_44844_32765# VGND 0.87475f $ **FLOATING
+C1720 a_34260_32765# VGND 1.00073f $ **FLOATING
+C1721 a_28484_32765# VGND 0.87483f $ **FLOATING
+C1722 a_17900_32765# VGND 1.00073f $ **FLOATING
+C1723 a_12124_32765# VGND 0.88112f $ **FLOATING
+C1724 a_1540_32765# VGND 1.02208f $ **FLOATING
+C1725 x_ota_vi.MN_TAIL_BIAS VGND 80.2942f
+C1726 a_44844_33903# VGND 0.9992f $ **FLOATING
+C1727 a_34260_33903# VGND 0.87578f $ **FLOATING
+C1728 a_28484_33903# VGND 0.9992f $ **FLOATING
+C1729 a_17900_33903# VGND 0.87578f $ **FLOATING
+C1730 a_12124_33903# VGND 0.9992f $ **FLOATING
+C1731 a_1540_33903# VGND 0.89083f $ **FLOATING
+C1732 a_58656_34725# VGND 0.42573f $ **FLOATING
+C1733 a_50540_34725# VGND 0.46559f $ **FLOATING
+C1734 a_40470_35041# VGND 0.97422f $ **FLOATING
+C1735 a_57086_35703# VGND 0.41766f $ **FLOATING
+C1736 a_50540_35703# VGND 0.46377f $ **FLOATING
+C1737 a_34260_35041# VGND 0.97745f $ **FLOATING
+C1738 a_24110_35041# VGND 0.97422f $ **FLOATING
+C1739 a_17900_35041# VGND 0.97745f $ **FLOATING
+C1740 a_7750_35041# VGND 0.97422f $ **FLOATING
+C1741 a_1540_35041# VGND 0.9925f $ **FLOATING
+C1742 a_61124_36681# VGND 0.43493f $ **FLOATING
+C1743 a_50540_36681# VGND 0.46703f $ **FLOATING
+C1744 a_47086_36059# VGND 0.11104f $ **FLOATING
+C1745 a_34260_36059# VGND 0.19204f $ **FLOATING
+C1746 a_30726_36059# VGND 0.11104f $ **FLOATING
+C1747 a_17900_36059# VGND 0.19204f $ **FLOATING
+C1748 a_14366_36059# VGND 0.11104f $ **FLOATING
+C1749 a_1540_36059# VGND 0.2071f $ **FLOATING
+C1750 a_61392_37419# VGND 0.61938f $ **FLOATING
+C1751 x_pas.vi_net2 VGND 21.2122f
+C1752 a_60166_37419# VGND 0.58461f $ **FLOATING
+C1753 a_59666_37419# VGND 0.44245f $ **FLOATING
+C1754 a_50540_37419# VGND 0.4579f $ **FLOATING
+C1755 a_47086_37446# VGND 0.11213f $ **FLOATING
+C1756 x_pas.vi_net1 VGND 24.212f
+C1757 a_34260_37446# VGND 0.19886f $ **FLOATING
+C1758 a_30726_37446# VGND 0.11213f $ **FLOATING
+C1759 x_idac_a.Vbranch VGND 24.2776f
+C1760 a_17900_37446# VGND 0.19886f $ **FLOATING
+C1761 a_14366_37446# VGND 0.11213f $ **FLOATING
+C1762 x_idac_b.Vbranch VGND 25.8205f
+C1763 a_1540_37446# VGND 0.21392f $ **FLOATING
+C1764 x_idac_c.Vbranch VGND 29.8991f
+C1765 a_62562_38797# VGND 0.08815f $ **FLOATING
+C1766 x_core.iz_lin VGND 21.4683f
+C1767 x_core.iz_sq VGND 25.1155f
+C1768 x_core.ix_sq VGND 32.0708f
+C1769 a_56016_38797# VGND 0.05951f $ **FLOATING
+C1770 a_55516_38797# VGND 0.06014f $ **FLOATING
+C1771 x_aux.b3 VGND 23.7306f
+C1772 x_aux.b2 VGND 8.52408f
+C1773 x_aux.v_mir_out VGND 7.19127f
+C1774 a_50540_38797# VGND 0.11229f $ **FLOATING
+C1775 x_aux.b1 VGND 9.73093f
+C1776 x_idac_a.net1 VGND 3.13776f
+C1777 x_idac_a.net4 VGND 2.99686f
+C1778 x_idac_a.net3 VGND 2.65001f
+C1779 x_idac_a.net5 VGND 62.9851f
+C1780 x_idac_a.net2 VGND 3.69307f
+C1781 x_idac_b.net1 VGND 3.13776f
+C1782 x_idac_b.net4 VGND 2.99686f
+C1783 x_idac_b.net3 VGND 2.65006f
+C1784 x_idac_b.net5 VGND 63.3976f
+C1785 x_idac_b.net2 VGND 3.69307f
+C1786 x_idac_c.net1 VGND 3.14121f
+C1787 x_idac_c.net4 VGND 3.00269f
+C1788 x_idac_c.net3 VGND 2.65968f
+C1789 x_idac_c.net5 VGND 64.1347f
+C1790 x_idac_c.net2 VGND 3.72124f
+C1791 a_58656_40144# VGND 0.07354f $ **FLOATING
+C1792 a_50540_40144# VGND 0.10857f $ **FLOATING
+C1793 a_58656_41011# VGND 0.0712f $ **FLOATING
+C1794 x_core.iy_lin VGND 61.0826f
+C1795 a_50540_41011# VGND 0.1061f $ **FLOATING
+C1796 x_aux.b4 VGND 13.0243f
+C1797 a_58656_41878# VGND 0.16013f $ **FLOATING
+C1798 x_aux.c_net1 VGND 35.0979f
+C1799 a_50540_41878# VGND 0.33327f $ **FLOATING
+C1800 a_43212_40984# VGND 0.15571f $ **FLOATING
+C1801 a_34260_40984# VGND 0.32754f $ **FLOATING
+C1802 a_26852_40984# VGND 0.15571f $ **FLOATING
+C1803 a_17900_40984# VGND 0.32754f $ **FLOATING
+C1804 a_10492_40984# VGND 0.15571f $ **FLOATING
+C1805 a_1540_40984# VGND 0.35645f $ **FLOATING
+C1806 x_pas.vi_vmir VGND 16.0188f
+C1807 a_43212_42731# VGND 0.15875f $ **FLOATING
+C1808 x_idac_a.out VGND 43.0757f
+C1809 a_34260_42731# VGND 0.33153f $ **FLOATING
+C1810 a_26852_42731# VGND 0.15875f $ **FLOATING
+C1811 x_idac_b.out VGND 0.10226p
+C1812 x_idac_a.net6 VGND 19.2641f
+C1813 a_17900_42731# VGND 0.33153f $ **FLOATING
+C1814 a_10492_42731# VGND 0.15875f $ **FLOATING
+C1815 x_idac_c.out VGND 97.32571f
+C1816 x_idac_b.net6 VGND 19.2096f
+C1817 a_1540_42731# VGND 0.36045f $ **FLOATING
+C1818 x_idac_c.net6 VGND 19.4472f
+.ends
+
